@@ -15,7 +15,7 @@ const AboutDetails = () => {
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
             Architect of Enchantment
           </h2>
-          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+          <p className="font-light  text-xs sm:text-sm md:text-base">
             Hi there! I&apos;m Peace but prefer being referred to as Pease (I
             promise there&apos;s no big reason, it&apos;s just a matter of
             preference 😉), based in Lagos, Nigeria. With dedicated passion for
@@ -24,7 +24,7 @@ const AboutDetails = () => {
             ReactJS, NodeJS, React Native, Flutter and Kotlin.
           </p>
 
-          <p>
+          <p className="font-light  text-xs sm:text-sm md:text-base">
             I&apos;m great at a lot of things but I shine most at frontend
             development and even more enthused with making interactive
             applications. The big picture is to become an amazing Blockchain
