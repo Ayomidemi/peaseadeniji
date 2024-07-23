@@ -1,11 +1,18 @@
 import React from "react";
-
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import bg from "../../../../public/background/about-bg.png";
 import RenderModel from "@/components/RenderModel";
-import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";
+
+const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+  ssr: false,
+});
+
+export const metadata = {
+  title: "About Me",
+};
 
 const About = () => {
   return (

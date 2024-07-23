@@ -1,9 +1,13 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import bg from "../../public/background/bg-image.png";
 import RenderModel from "@/components/RenderModel";
-import Wizard from "@/components/models/Wizard";
 import Navigation from "@/components/navigations";
+
+const Wizard = dynamic(() => import("@/components/models/Wizard"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
