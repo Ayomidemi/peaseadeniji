@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import bg from "../../../../public/background/bg-img.png";
+import bg from "../../../../public/background/about-bg.png";
 import RenderModel from "@/components/RenderModel";
 import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";

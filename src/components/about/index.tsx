@@ -21,7 +21,7 @@ const AboutDetails = () => {
             preference 😉), based in Lagos, Nigeria. With dedicated passion for
             UI effects, cutting edge technology, animations and creating
             intuitive, dynamic user experiences, I build amazing stuffs using
-            React JS, React Native and Flutter.
+            ReactJS, NodeJS, React Native, Flutter and Kotlin.
           </p>
 
           <p>
@@ -50,13 +50,57 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
-        <ItemLayout className={"col-span-full"}>
+        <ItemLayout
+          className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
+        >
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=ayomidemi&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
             alt="Pease Adeniji"
             loading="lazy"
           />
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            alt="Pease Adeniji"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-full"}>
+          <img
+            className="w-full h-auto"
+            src={`https://skillicons.dev/icons?i=aws,azure,babel,blender,bootstrap,css,cypress,dart,django,docker,express,figma,firebase,flask,flutter,git,github,graphql,html,idea,ai,java,jest,kotlin,materialui,mongodb,nestjs,nextjs,nodejs,notion,pnpm,postman,py,react,redux,sass,sqlite,solidity,swift,tailwind,threejs,ts,vscode`}
+            alt="Pease Adeniji"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=ayomidemi&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
+            alt="Pease Adeniji"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+          <Link
+            href="https://github.com/Ayomidemi/NextJs-Apple-Clone"
+            target="_blank"
+            className="w-full"
+          >
+            <img
+              className="w-full h-auto"
+              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=ayomidemi&repo=NextJs-Apple-Clone&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
+              alt="Pease Adeniji"
+              loading="lazy"
+            />
+          </Link>
         </ItemLayout>
       </div>
     </section>
