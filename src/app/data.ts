@@ -33,7 +33,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Horizoon Banking App",
+    name: "Horizon Banking App",
     description: "Banking made easy",
     date: "2024-07-13",
     demoLink: "https://horizon-banking-app-psi.vercel.app",
