@@ -27,7 +27,11 @@ const Projects = () => {
         className="-z-50 w-full h-full object-cover object-center opacity-40"
       /> */}
 
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-accent font-semibold text-center text-4xl capitalize mb-8">
+          My Work
+        </h1>
+
         <ProjectsList projects={projectsData} />
       </div>
 
