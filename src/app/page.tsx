@@ -1,9 +1,12 @@
-import Image from "next/image";
+// import Image from "next/image";
 import dynamic from "next/dynamic";
 
-import bg from "../../public/background/bg-image.png";
-import RenderModel from "@/components/RenderModel";
+// import bg from "../../public/background/bg-image.png";
+// import RenderModel from "@/components/RenderModel";
 import Navigation from "@/components/navigations";
+import About from "./(sub pages)/about/page";
+import Projects from "./(sub pages)/projects/page";
+import Contact from "./(sub pages)/contact/page";
 
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
   ssr: false,
@@ -11,8 +14,8 @@ const Wizard = dynamic(() => import("@/components/models/Wizard"), {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative">
-      <Image
+    <main className="flex min-h-screen flex-col items-center justify-between relative overflow-hidden px-6 sm:px-8">
+      {/* <Image
         priority
         sizes="100vw"
         src={bg}
@@ -22,12 +25,17 @@ export default function Home() {
       />
 
       <div className="w-full h-screen">
-        {/* navigation and 3D model */}
-        <Navigation />
+      <Navigation />
+        
         <RenderModel>
           <Wizard />
         </RenderModel>
-      </div>
+      </div> */}
+
+      <Navigation />
+      <About />
+      <Projects />
+      <Contact />
     </main>
   );
 }

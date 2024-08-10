@@ -33,20 +33,27 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: "Horizoon Banking App",
+    description: "Banking made easy",
+    date: "2024-07-13",
+    demoLink: "https://horizon-banking-app-psi.vercel.app",
+  },
+  {
+    id: 4,
     name: "AI powered T-Shirt Generator",
     description: "Unleash your imagination.",
     date: "2024-07-20",
     demoLink: "https://ai-powered-threejs-t-shirt-generator.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "AppleClone",
     description: "Powered by intellect, driven by values",
     date: "2022-09-18",
     demoLink: "https://next-js-apple-clone.vercel.app",
   },
   {
-    id: 5,
+    id: 6,
     name: "NFT Marketplace",
     description: "The Heisenbergs",
     date: "2022-03-13",
@@ -55,10 +62,10 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
-  { label: "About", link: "/about", icon: "about", newTab: false },
-  { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
+  // { label: "Home", link: "/", icon: "home", newTab: false },
+  // { label: "About", link: "/about", icon: "about", newTab: false },
+  // { label: "Projects", link: "/projects", icon: "projects", newTab: false },
+  // { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
     link: "https://github.com/Ayomidemi",
