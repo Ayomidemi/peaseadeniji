@@ -16,7 +16,7 @@ const AboutDetails = () => {
             Who I Am & What I Do
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base">
-            Hi there! I’m Peace, but you can call me Pease (no deep story here,
+            Hi there! I’m Peace (legally), but you can call me Pease (no deep story here,
             just a personal vibe 😉). I’m based in the vibrant city of Lagos,
             Nigeria. My passion lies in crafting UI effects, embracing
             cutting-edge tech, and bringing animations to life. I’m all about

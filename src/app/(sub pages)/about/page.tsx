@@ -39,7 +39,7 @@ const About = () => {
           </p>
 
           <h1 className="font-bold text-2xl xs:text-4xl sm:text-5xl lg:text-6xl ">
-            Hi, I&#39;m <span className="text-accent"> Peace Adeniji</span>
+            Hi, I&#39;m <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
           <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-gray-400">
             A Web & Mobile Developer

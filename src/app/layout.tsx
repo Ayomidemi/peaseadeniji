@@ -12,8 +12,8 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: "Pease Adeniji",
-    default: "Pease Adeniji",
+    template: "Peace (Pease) Adeniji",
+    default: "Peace (Pease) Adeniji",
   },
   description:
     "Experienced Front-End Engineer with a proven record in codebase optimization, project leadership, and junior developer mentorship. Committed to continuous learning and enhancing team performance for improved user efficiency.",
