@@ -18,17 +18,24 @@ Websites:
 
 export const projectsData = [
   {
-    id: 1,
+    id: 0,
     name: "ChessInSlums",
     description: "Raising champions from the slum.",
-    date: "2023-07-12",
+    date: "2022-11-12",
     demoLink: "https://www.chessinslumsafrica.com",
+  },
+  {
+    id: 1,
+    name: "Eze Wholesale",
+    description: "Buy Wholesale Electronics in Bulk.",
+    date: "2023-02-04",
+    demoLink: "https://www.ezewholesale.com",
   },
   {
     id: 2,
     name: "Peniel Day Foundation",
     description: "Nuturing adolescents",
-    date: "2023-09-18",
+    date: "2022-09-18",
     demoLink: "https://www.penielday.org/",
   },
   {
@@ -49,7 +56,7 @@ export const projectsData = [
     id: 5,
     name: "AppleClone",
     description: "Powered by intellect, driven by values",
-    date: "2022-09-18",
+    date: "2023-09-18",
     demoLink: "https://next-js-apple-clone.vercel.app",
   },
   {
