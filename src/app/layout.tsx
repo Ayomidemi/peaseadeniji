@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
+import { Analytics } from "@vercel/analytics/next"
 import FireFliesBackground from "@/components/FireFliesBackground";
 import Sound from "@/components/Sound";
 
