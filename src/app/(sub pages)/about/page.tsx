@@ -83,7 +83,7 @@ const About = () => {
             <div className="bg-gray-800/60 rounded-lg p-6 font-mono text-left border border-accent/30">
               <div className="text-gray-300 mb-2">
                 <span className="text-accent/80">const</span>{" "}
-                <span className="text-gray-200">Peace</span> = &#123;
+                <span className="text-gray-200">Pease</span> = &#123;
               </div>
               <div className="ml-4 space-y-1 text-sm">
                 <div>
