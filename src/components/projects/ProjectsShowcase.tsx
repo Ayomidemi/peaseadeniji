@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface Project {
@@ -33,30 +32,12 @@ interface ProjectsShowcaseProps {
   categories: Category[];
 }
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 },
-};
-
 const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
   project,
   category,
 }) => {
   return (
-    <motion.div
-      variants={item}
-      className="group relative bg-background/50 backdrop-blur-sm rounded-xl overflow-hidden border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10"
-    >
+    <div className="group relative bg-background/50 backdrop-blur-sm rounded-xl overflow-hidden border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10">
       {/* Project Image Placeholder */}
       <div className="aspect-video bg-gradient-to-br from-accent/20 to-muted/20 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -161,7 +142,7 @@ const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -170,30 +151,10 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
   categories,
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(ref.current);
-      }
-    };
+    setIsClient(true);
   }, []);
 
   const filteredProjects =
@@ -207,20 +168,25 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
     return categories.find((cat) => cat.id === categoryId) || categories[0];
   };
 
+  if (!isClient) {
+    return (
+      <div className="space-y-16">
+        <div className="text-center py-12">
+          <div className="text-muted">Loading projects...</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div ref={ref} className="space-y-16">
+    <div className="space-y-16">
       {/* Featured Projects */}
       {featuredProjects.length > 0 && (
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 text-center">
             Featured Projects
           </h2>
-          <motion.div
-            variants={container}
-            initial="hidden"
-            animate={isVisible ? "show" : "hidden"}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -228,7 +194,7 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
                 category={getCategoryById(project.category)}
               />
             ))}
-          </motion.div>
+          </div>
         </div>
       )}
 
@@ -273,12 +239,7 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
       </div>
 
       {/* Filtered Projects Grid */}
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate={isVisible ? "show" : "hidden"}
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-      >
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
@@ -286,7 +247,7 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
             category={getCategoryById(project.category)}
           />
         ))}
-      </motion.div>
+      </div>
 
       {/* Empty State */}
       {filteredProjects.length === 0 && (
