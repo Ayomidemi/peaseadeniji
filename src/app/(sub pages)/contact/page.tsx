@@ -67,7 +67,7 @@ const Contact = () => {
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">
             Let&apos;s Connect
           </h1>
-          <p className="text-center font-light text-sm xs:text-base max-w-[80%] sm:max-w-[65%]">
+          <p className="text-center font-light text-base xs:text-base max-w-[80%] sm:max-w-[65%]">
             Have a project in mind or just want to chat? I&apos;m always excited
             to collaborate and explore new ideas. Reach out, and let&apos;s
             bring your vision to life!
@@ -83,41 +83,43 @@ const Contact = () => {
 
             <div className="space-y-4">
               <div className="flex flex-col lg:flex-row lg:items-center gap-2">
-                <span className="text-accent font-medium text-sm">Email:</span>
+                <span className="text-accent font-medium text-base">
+                  Email:
+                </span>
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="text-foreground hover:text-accent transition-colors text-sm"
+                  className="text-foreground hover:text-accent transition-colors text-base"
                 >
                   {contactInfo.email}
                 </a>
               </div>
 
               <div className="flex flex-col lg:flex-row lg:items-center gap-2">
-                <span className="text-accent font-medium text-sm">
+                <span className="text-accent font-medium text-base">
                   Location:
                 </span>
-                <span className="text-foreground text-sm">
+                <span className="text-foreground text-base">
                   {contactInfo.location}
                 </span>
               </div>
 
               <div className="flex flex-col lg:flex-row lg:items-center gap-2">
-                <span className="text-accent font-medium text-sm">
+                <span className="text-accent font-medium text-base">
                   LinkedIn:
                 </span>
                 <a
                   href={contactInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground hover:text-accent transition-colors text-sm"
+                  className="text-foreground hover:text-accent transition-colors text-base"
                 >
                   linkedin.com/in/peaceadeniji
                 </a>
               </div>
             </div>
 
-            <div className="pt-4">
-              <p className="text-muted text-xs max-w-xs">
+            <div className="pt-4 hidden sm:flex">
+              <p className="text-muted text-sm max-w-xs">
                 Available for remote work opportunities worldwide. Open to
                 full-time, contract, and consulting roles.
               </p>

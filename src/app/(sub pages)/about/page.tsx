@@ -66,25 +66,70 @@ const About = () => {
       </div> */}
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-max">
+        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
           {/* Newwww */}
-          <p className="uppercase text-xs xs:text-sm tracking-widest text-gray-300 mb-4">
+          <p className="uppercase text-sm xs:text-base tracking-widest text-gray-300 mb-4">
             LET&#39;S BUILD SOMETHING COOL.
           </p>
 
-          <h1 className="font-bold text-2xl xs:text-4xl sm:text-5xl lg:text-6xl ">
+          <h1 className="font-bold text-4xl lg:text-6xl">
             Hi, I&#39;m{" "}
             <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
           <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-gray-400">
             Senior Software Engineer
           </h1>
-          <p className="py-8 text-gray-300 hidden lg:flex sm:max-w-[65%]">
-            Results-driven Senior Software Engineer with 5+ years of experience
-            building scalable, high-performance web and mobile applications.
-            Passionate about leading remote engineering teams, mentoring
-            developers, and driving impactful software solutions.
-          </p>
+          <div className="py-8 max-w-[90%]">
+            <div className="bg-gray-800/60 rounded-lg p-6 font-mono text-left border border-accent/30">
+              <div className="text-gray-300 mb-2">
+                <span className="text-accent/80">const</span>{" "}
+                <span className="text-gray-200">Peace</span> = &#123;
+              </div>
+              <div className="ml-4 space-y-1 text-sm">
+                <div>
+                  <span className="text-accent/70">role</span>:{" "}
+                  <span className="text-gray-300">
+                    &quot;Senior Software Engineer&quot;
+                  </span>
+                  ,
+                </div>
+                <div>
+                  <span className="text-accent/70">expertise</span>:{" "}
+                  <span className="text-gray-300">
+                    &quot;Building scalable apps that impact thousands&quot;
+                  </span>
+                  ,
+                </div>
+                <div>
+                  <span className="text-accent/70">techStack</span>: [
+                  <span className="text-gray-300">&quot;React&quot;</span>,{" "}
+                  <span className="text-gray-300">&quot;Node.js&quot;</span>,{" "}
+                  <span className="text-gray-300">&quot;Python&quot;</span>,{" "}
+                  <span className="text-gray-300">&quot;C++&quot;</span>],
+                </div>
+                <div>
+                  <span className="text-accent/70">passion</span>:{" "}
+                  <span className="text-gray-300">
+                    &quot;Fintech &amp; Social Impact&quot;
+                  </span>
+                  ,
+                </div>
+                <div>
+                  <span className="text-accent/70">collaborate</span>:{" "}
+                  <span className="text-gray-200">()</span>{" "}
+                  <span className="text-accent/80">=&gt;</span> &#123;
+                  <div className="ml-4">
+                    <span className="text-accent/80">return</span>{" "}
+                    <span className="text-gray-300">
+                      &quot;Let&apos;s build something amazing&quot;
+                    </span>
+                    ;
+                  </div>
+                  &#125;
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
