@@ -1,4 +1,4 @@
-# Peace (Pease) Adeniji - Senior Software Engineer Portfolio
+# Peace (Pease) Adeniji - Senior Software Engineer
 
 A modern, responsive portfolio showcasing 5+ years of software engineering experience, built with Next.js 13+ and optimized for SEO.
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: {
     template: "%s | Peace (Pease) Adeniji - Senior Software Engineer",
     default:
-      "Peace (Pease) Adeniji - Senior Software Engineer & Quantitative Developer | Portfolio",
+      "Peace (Pease) Adeniji - Senior Software Engineer & Quantitative Developer",
   },
   description:
     "Results-driven Senior Software Engineer and Quantitative Developer with 5+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University. Expert in React, React Native, Node.js, Python, C++, and quantitative finance. Proven track record in leading remote engineering teams, optimizing systems, and delivering clean, maintainable code.",
@@ -90,16 +90,16 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://peaseadeniji.com",
     title:
-      "Peace (Pease) Adeniji - Senior Software Engineer & Quantitative Developer | Portfolio",
+      "Peace (Pease) Adeniji - Senior Software Engineer & Quantitative Developer",
     description:
       "Senior Software Engineer & Quantitative Developer with 5+ years experience in React, React Native, Node.js, Python, C++. MSc Financial Engineering. Available for remote opportunities worldwide.",
-    siteName: "Peace Adeniji Portfolio",
+    siteName: "Peace (Pease) Adeniji",
     images: [
       {
         url: "/og-image.jpg", // You'll need to add this image
         width: 1200,
         height: 630,
-        alt: "Peace Adeniji - Senior Software Engineer & Quantitative Developer Portfolio",
+        alt: "Peace Adeniji - Senior Software Engineer & Quantitative Developer",
       },
     ],
   },

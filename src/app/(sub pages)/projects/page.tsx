@@ -13,7 +13,7 @@ import ProjectsShowcase from "@/components/projects/ProjectsShowcase";
 // });
 
 export const metadata: Metadata = {
-  title: "Projects Portfolio - React, Next.js, Fintech, AI & Web3 Development",
+  title: "Projects - React, Next.js, Fintech, AI & Web3 Development",
   description:
     "Explore Peace Adeniji's diverse software engineering portfolio: Fintech banking apps, e-commerce platforms, social impact projects, Web3 NFT marketplaces, AI-powered applications, and modern web development. Built with React, Next.js, Python, C++, and cutting-edge technologies.",
   keywords: [
