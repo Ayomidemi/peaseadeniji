@@ -5,8 +5,9 @@ import dynamic from "next/dynamic";
 // import RenderModel from "@/components/RenderModel";
 import Navigation from "@/components/navigations";
 import About from "./(sub pages)/about/page";
-import Projects from "./(sub pages)/projects/page";
 import Contact from "./(sub pages)/contact/page";
+import ProjectCategoriesOverview from "@/components/projects/ProjectCategoriesOverview";
+import { projectsData, projectCategories } from "@/app/data";
 
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
   ssr: false,
@@ -34,7 +35,10 @@ export default function Home() {
 
       <Navigation />
       <About />
-      <Projects />
+      <ProjectCategoriesOverview
+        categories={projectCategories}
+        projects={projectsData}
+      />
       <Contact />
     </main>
   );

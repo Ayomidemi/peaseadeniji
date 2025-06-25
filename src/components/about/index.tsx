@@ -13,27 +13,29 @@ const AboutDetails = () => {
           }
         >
           <h2 className="text-xl md:text-2xl text-left w-full capitalize">
-            Who I Am & What I Do
+            Professional Summary
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base">
-            Hi there! I’m Peace (legally), but you can call me Pease (no deep story here,
-            just a personal vibe 😉). I’m based in the vibrant city of Lagos,
-            Nigeria. My passion lies in crafting UI effects, embracing
-            cutting-edge tech, and bringing animations to life. I’m all about
-            creating intuitive and dynamic user experiences. Whether it’s
-            ReactJS, NodeJS, React Native, Flutter, or Kotlin, I’m here to build
-            something awesome.
+            Results-driven Senior Software Engineer and Quantitative Developer
+            with 5+ years of experience building scalable, high-performance web
+            and mobile applications. MSc in Financial Engineering from
+            WorldQuant University. Expert in React, React Native, Node.js,
+            Next.js, Python, C++, and quantitative finance. Proven track record
+            in leading remote engineering teams, optimizing systems, and
+            delivering clean, maintainable code.
           </p>
 
           <p className="font-light text-xs sm:text-sm md:text-base">
             <span className="font-semibold text-xs sm:text-sm md:text-base text-left mb-2 block w-full">
-              What I Excel At
+              Core Expertise & Quantitative Skills
             </span>
-            I’ve got a knack for many things, but frontend development is where
-            I truly shine. I’m especially thrilled by making interactive
-            applications that captivate and engage. My ultimate goal? To become
-            a top-notch Blockchain Engineer 😄. So, you’ll often find me diving
-            into new projects and exploring the latest tech trends.
+            Specialized in full-stack development (React, Node.js), mobile
+            applications (React Native, Flutter), and quantitative finance
+            (Python, C++, mathematical modeling). Passionate about bridging
+            technology and finance, contributing to mission-driven
+            organizations, mentoring engineers, and driving impactful software
+            solutions. Led internationalization efforts expanding apps to 4+
+            languages and improved frontend performance by 35%.
           </p>
         </ItemLayout>
 
@@ -41,7 +43,7 @@ const AboutDetails = () => {
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            4+{" "}
+            5+{" "}
             <sub className="font-semibold text-base">years of experience</sub>
           </p>
         </ItemLayout>
@@ -57,66 +59,206 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
+        {/* Education Section */}
+        <ItemLayout
+          className={"col-span-full md:col-span-6 flex-col items-start"}
+        >
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Education
+          </h3>
+          <div className="space-y-3 w-full">
+            <div className="border-l-2 border-accent/30 pl-4">
+              <h4 className="text-sm font-semibold text-accent">
+                Master of Science (MSc) in Financial Engineering
+              </h4>
+              <p className="text-xs text-foreground/80">
+                WorldQuant University
+              </p>
+              <p className="text-xs text-muted">2026</p>
+              <p className="text-xs text-muted mt-1">
+                Quantitative Finance • Risk Management • Portfolio Optimization
+              </p>
+            </div>
+            <div className="border-l-2 border-accent/30 pl-4">
+              <h4 className="text-sm font-semibold text-accent">
+                Bachelor of Science (BSc) in Computer Science
+              </h4>
+              <p className="text-xs text-foreground/80">Miva Open University</p>
+              <p className="text-xs text-muted">2025</p>
+              <p className="text-xs text-muted mt-1">
+                Software Engineering • Data Structures • Algorithms
+              </p>
+            </div>
+          </div>
+        </ItemLayout>
+
+        {/* Key Achievements */}
+        <ItemLayout
+          className={"col-span-full md:col-span-6 flex-col items-start"}
+        >
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Key Achievements
+          </h3>
+          <ul className="space-y-2 text-xs sm:text-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-accent">•</span>
+              <span>
+                Led internationalization expanding apps to 4+ languages and
+                currencies
+              </span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent">•</span>
+              <span>
+                Improved frontend performance by 35% through UI optimization
+              </span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent">•</span>
+              <span>
+                Reduced release cycle time by 40% through automated deployment
+              </span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent">•</span>
+              <span>Led team of 5 developers across multiple time zones</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-accent">•</span>
+              <span>
+                Developed quantitative models for financial risk assessment
+              </span>
+            </li>
+          </ul>
+        </ItemLayout>
+
+        {/* Core Technologies */}
+        <ItemLayout
+          className={"col-span-full md:col-span-6 flex-col items-start"}
+        >
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Programming Languages
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {["JavaScript", "TypeScript", "Python", "C++"].map(
+              (lang, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs sm:text-sm font-medium"
+                >
+                  {lang}
+                </span>
+              )
+            )}
+          </div>
+        </ItemLayout>
+
+        {/* Frameworks & Technologies */}
+        <ItemLayout
+          className={"col-span-full md:col-span-6 flex-col items-start"}
+        >
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Frameworks & Technologies
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "React",
+              "React Native",
+              "Next.js",
+              "Node.js",
+              "Express.js",
+              "Django",
+              "Flask",
+            ].map((tech, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 bg-muted/20 text-foreground rounded-full text-xs sm:text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </ItemLayout>
+
+        {/* All Skills Icons */}
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=aws,azure,babel,blender,bootstrap,css,cypress,dart,django,docker,express,figma,firebase,flask,flutter,git,github,graphql,html,idea,ai,java,jest,kotlin,materialui,mongodb,nestjs,nextjs,nodejs,notion,pnpm,postman,py,react,redux,sass,sqlite,solidity,swift,tailwind,threejs,ts,vscode`}
-            alt="Pease Adeniji"
+            src={`https://skillicons.dev/icons?i=js,ts,python,cpp,react,nodejs,nextjs,flutter,dart,swift,java,aws,azure,docker,git,github,mongodb,postgresql,firebase,tailwind,figma,vscode`}
+            alt="Pease Adeniji Technical Skills"
             loading="lazy"
           />
         </ItemLayout>
 
-        {/* <ItemLayout
-          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+        {/* Languages */}
+        <ItemLayout
+          className={
+            "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
+          }
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            5+ <sub className="font-semibold text-base">clients</sub>
-          </p>
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Languages
+          </h3>
+          <div className="space-y-2 w-full text-xs sm:text-sm">
+            <div className="flex justify-between">
+              <span>English</span>
+              <span className="text-muted">Full Professional</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Yoruba</span>
+              <span className="text-muted">Native/Bilingual</span>
+            </div>
+          </div>
+        </ItemLayout>
+
+        {/* Availability */}
+        <ItemLayout
+          className={
+            "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
+          }
+        >
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Availability
+          </h3>
+          <div className="space-y-1 text-xs sm:text-sm">
+            <p className="text-accent font-semibold">
+              Open to New Opportunities
+            </p>
+            <p className="text-foreground/80">Remote & Hybrid Roles</p>
+            <p className="text-muted">Full-time, Contract & Consulting</p>
+            <p className="text-muted">Available Worldwide</p>
+          </div>
         </ItemLayout>
 
         <ItemLayout
-          className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
+          className={
+            "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
+          }
         >
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=ayomidemi&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Pease Adeniji"
-            loading="lazy"
-          />
+          <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
+            Interests
+          </h3>
+          <div className="flex flex-wrap gap-1">
+            {[
+              "Mathematics",
+              "Volunteering",
+              "Swimming",
+              "Reading",
+              "Writing",
+              "Pottery",
+              "Violin",
+              "Research",
+              "Mentorship",
+            ].map((interest, index) => (
+              <span
+                key={index}
+                className="px-2 py-1 bg-muted/10 text-foreground/80 rounded text-xs"
+              >
+                {interest}
+              </span>
+            ))}
+          </div>
         </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="Pease Adeniji"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=ayomidemi&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
-            alt="Pease Adeniji"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <Link
-            href="https://github.com/Ayomidemi/NextJs-Apple-Clone"
-            target="_blank"
-            className="w-full"
-          >
-            <img
-              className="w-full h-auto"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=ayomidemi&repo=NextJs-Apple-Clone&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
-              alt="Pease Adeniji"
-              loading="lazy"
-            />
-          </Link>
-        </ItemLayout> */}
       </div>
     </section>
   );

@@ -92,7 +92,7 @@ export default function Form() {
           type="text"
           placeholder="Name"
           {...register("name", {
-            required: "This field is required!",
+            required: "Humor me!",
             minLength: {
               value: 3,
               message: "Name should be atleast 3 characters long.",
@@ -111,7 +111,7 @@ export default function Form() {
           type="email"
           placeholder="Email"
           {...register("email", {
-            required: "This field is required!",
+            required: "Humor me!",
             pattern: /^\S+@\S+$/i,
           })}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
@@ -126,7 +126,7 @@ export default function Form() {
           variants={item}
           placeholder="Message"
           {...register("message", {
-            required: "This field is required!",
+            required: "Humor me!",
             maxLength: {
               value: 500,
               message: "Message should be less than 500 characters",
