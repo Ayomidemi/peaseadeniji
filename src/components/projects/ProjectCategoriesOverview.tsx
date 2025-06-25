@@ -32,7 +32,7 @@ const ProjectCategoriesOverview: React.FC<ProjectCategoriesOverviewProps> = ({
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
             My <span className="text-accent">Projects</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-muted max-w-3xl mx-auto leading-relaxed">
             Explore my diverse portfolio spanning fintech, AI, Web3, and social
             impact. Each category demonstrates expertise in modern technologies
             and problem-solving approaches.
@@ -59,7 +59,7 @@ const ProjectCategoriesOverview: React.FC<ProjectCategoriesOverviewProps> = ({
                       {category.description}
                     </p>
                     <div className="flex items-center justify-between mt-auto">
-                      <span className="text-xs font-medium">
+                      <span className="text-sm font-medium">
                         {projectCount} Project{projectCount !== 1 ? "s" : ""}
                       </span>
                       <svg

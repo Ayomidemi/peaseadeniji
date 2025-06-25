@@ -15,7 +15,7 @@ const AboutDetails = () => {
           <h2 className="text-xl md:text-2xl text-left w-full capitalize">
             Professional Summary
           </h2>
-          <p className="font-light  text-xs sm:text-sm md:text-base">
+          <p className="font-light  text-sm sm:text-sm md:text-base">
             Results-driven Senior Software Engineer and Quantitative Developer
             with 5+ years of experience building scalable, high-performance web
             and mobile applications. MSc in Financial Engineering from
@@ -25,8 +25,8 @@ const AboutDetails = () => {
             delivering clean, maintainable code.
           </p>
 
-          <p className="font-light text-xs sm:text-sm md:text-base">
-            <span className="font-semibold text-xs sm:text-sm md:text-base text-left mb-2 block w-full">
+          <p className="font-light text-sm sm:text-sm md:text-base">
+            <span className="font-semibold text-sm sm:text-sm md:text-base text-left mb-2 block w-full">
               Core Expertise & Quantitative Skills
             </span>
             Specialized in full-stack development (React, Node.js), mobile
@@ -71,11 +71,11 @@ const AboutDetails = () => {
               <h4 className="text-sm font-semibold text-accent">
                 Master of Science (MSc) in Financial Engineering
               </h4>
-              <p className="text-xs text-foreground/80">
+              <p className="text-sm text-foreground/80">
                 WorldQuant University
               </p>
-              <p className="text-xs text-muted">2026</p>
-              <p className="text-xs text-muted mt-1">
+              <p className="text-sm text-muted">2026</p>
+              <p className="text-sm text-muted mt-1">
                 Quantitative Finance • Risk Management • Portfolio Optimization
               </p>
             </div>
@@ -83,9 +83,9 @@ const AboutDetails = () => {
               <h4 className="text-sm font-semibold text-accent">
                 Bachelor of Science (BSc) in Computer Science
               </h4>
-              <p className="text-xs text-foreground/80">Miva Open University</p>
-              <p className="text-xs text-muted">2025</p>
-              <p className="text-xs text-muted mt-1">
+              <p className="text-sm text-foreground/80">Miva Open University</p>
+              <p className="text-sm text-muted">2025</p>
+              <p className="text-sm text-muted mt-1">
                 Software Engineering • Data Structures • Algorithms
               </p>
             </div>
@@ -99,7 +99,7 @@ const AboutDetails = () => {
           <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
             Key Achievements
           </h3>
-          <ul className="space-y-2 text-xs sm:text-sm">
+          <ul className="space-y-2 text-sm sm:text-sm">
             <li className="flex items-start gap-2">
               <span className="text-accent">•</span>
               <span>
@@ -144,7 +144,7 @@ const AboutDetails = () => {
               (lang, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs sm:text-sm font-medium"
+                  className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm sm:text-sm font-medium"
                 >
                   {lang}
                 </span>
@@ -172,7 +172,7 @@ const AboutDetails = () => {
             ].map((tech, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-muted/20 text-foreground rounded-full text-xs sm:text-sm"
+                className="px-3 py-1 bg-muted/20 text-foreground rounded-full text-sm sm:text-sm"
               >
                 {tech}
               </span>
@@ -199,7 +199,7 @@ const AboutDetails = () => {
           <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
             Languages
           </h3>
-          <div className="space-y-2 w-full text-xs sm:text-sm">
+          <div className="space-y-2 w-full text-sm sm:text-sm">
             <div className="flex justify-between">
               <span>English</span>
               <span className="text-muted">Full Professional</span>
@@ -220,7 +220,7 @@ const AboutDetails = () => {
           <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
             Availability
           </h3>
-          <div className="space-y-1 text-xs sm:text-sm">
+          <div className="space-y-1 text-sm sm:text-sm">
             <p className="text-accent font-semibold">
               Open to New Opportunities
             </p>
@@ -252,7 +252,7 @@ const AboutDetails = () => {
             ].map((interest, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-muted/10 text-foreground/80 rounded text-xs"
+                className="px-2 py-1 bg-muted/10 text-foreground/80 rounded text-sm"
               >
                 {interest}
               </span>

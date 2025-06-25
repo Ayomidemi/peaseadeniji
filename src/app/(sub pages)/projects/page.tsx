@@ -74,7 +74,7 @@ const Projects = () => {
         className="-z-50 w-full h-full object-cover object-center opacity-40"
       /> */}
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-0 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">

@@ -74,7 +74,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-center w-full max-w-4xl">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-center w-full max-w-full sm:max-w-4xl">
           {/* Contact Information */}
           <div className="flex flex-col space-y-6 text-center lg:text-left">
             <h2 className="text-xl font-semibold text-foreground">
@@ -125,7 +125,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="flex-1 max-w-md">
+          <div className="flex-1 w-full max-w-full sm:max-w-md">
             <Form />
           </div>
         </div>
