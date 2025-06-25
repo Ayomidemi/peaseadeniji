@@ -79,7 +79,7 @@ const About = () => {
           <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-gray-400">
             Senior Software Engineer
           </h1>
-          <div className="py-8 max-w-[90%]">
+          <div className="pt-8 max-w-full">
             <div className="bg-gray-800/60 rounded-lg p-6 font-mono text-left border border-accent/30">
               <div className="text-gray-300 mb-2">
                 <span className="text-accent/80">const</span>{" "}
