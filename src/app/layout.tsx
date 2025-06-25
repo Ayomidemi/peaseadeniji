@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import FireFliesBackground from "@/components/FireFliesBackground";
 import Sound from "@/components/Sound";
 
@@ -92,8 +92,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://peaseadeniji.com",
-    title:
-      "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
+    title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
     description:
       "Software Engineer & Quantitative Developer with 5+ years experience in React, React Native, Node.js, Python, C++. MSc Financial Engineering. Available for remote opportunities worldwide.",
     siteName: "Peace (Pease) Adeniji",
@@ -108,8 +107,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
+    title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
     description:
       "Software Engineer & Quantitative Developer specializing in React, React Native, Node.js, Python, C++. MSc Financial Engineering. 5+ years experience building scalable applications.",
     creator: "@pease_js",
@@ -125,6 +123,25 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/pease.svg",
+        color: "#fefe5b",
+      },
+    ],
   },
   verification: {
     // Add these when you set up Google Search Console and other tools
