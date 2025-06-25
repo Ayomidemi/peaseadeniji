@@ -164,6 +164,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#1b1b1b" />
         <meta name="color-scheme" content="dark light" />
 
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="google91a0fd3835748a9d.html"
+        />
+
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
