@@ -6,13 +6,12 @@ import type { Metadata } from "next";
 import Form from "@/components/contact/Form";
 
 export const metadata: Metadata = {
-  title:
-    "Contact Me - Hire Senior Software Engineer | Available for Remote Work",
+  title: "Contact Me - Hire Software Engineer | Available for Remote Work",
   description:
-    "Get in touch with Peace Adeniji, Senior Software Engineer available for remote opportunities worldwide. Open to full-time, contract, and consulting roles. Expert in React, React Native, Node.js, and modern web technologies. Based in Lagos, Nigeria with global availability.",
+    "Get in touch with Peace Adeniji, Software Engineer available for remote opportunities worldwide. Open to full-time, contract, and consulting roles. Expert in React, React Native, Node.js, and modern web technologies. Based in Lagos, Nigeria with global availability.",
   keywords: [
     "Contact Peace Adeniji",
-    "Hire Senior Software Engineer",
+    "Hire Software Engineer",
     "Remote Software Engineer",
     "React Developer for Hire",
     "Freelance Software Engineer",
@@ -29,15 +28,15 @@ export const metadata: Metadata = {
     "Mobile App Development Services",
   ],
   openGraph: {
-    title: "Contact Peace Adeniji - Senior Software Engineer for Hire",
+    title: "Contact Peace Adeniji - Software Engineer for Hire",
     description:
-      "Ready to hire a Senior Software Engineer? Peace Adeniji is available for remote opportunities worldwide. 5+ years experience in React, React Native, Node.js. Contact for collaboration.",
+      "Ready to hire a Software Engineer? Peace Adeniji is available for remote opportunities worldwide. 5+ years experience in React, React Native, Node.js. Contact for collaboration.",
     url: "https://peaseadeniji.com/contact",
   },
   twitter: {
-    title: "Hire Peace Adeniji - Senior Software Engineer",
+    title: "Hire Peace Adeniji - Software Engineer",
     description:
-      "Senior Software Engineer available for remote work. 5+ years experience, expert in React/Node.js. Open to full-time, contract & consulting opportunities.",
+      "Software Engineer available for remote work. 5+ years experience, expert in React/Node.js. Open to full-time, contract & consulting opportunities.",
   },
   alternates: {
     canonical: "/contact",

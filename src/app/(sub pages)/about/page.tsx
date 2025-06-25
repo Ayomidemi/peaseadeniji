@@ -12,14 +12,16 @@ import AboutDetails from "@/components/about";
 // });
 
 export const metadata: Metadata = {
-  title: "About Me - Senior Software Engineer with 5+ Years Experience",
+  title: "About Me - Software Engineer with 5+ Years Experience",
   description:
-    "Learn about Peace Adeniji, a Senior Software Engineer with 5+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
+    "Learn about Peace Adeniji, a Software Engineer with 5+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
   keywords: [
     "About Peace Adeniji",
     "Pease Adeniji",
     "Peace Adeniji",
-    "Senior Software Engineer Background",
+    "Pease",
+    "Peace",
+    "Software Engineer Background",
     "React Developer Experience",
     "Remote Team Leadership",
     "Financial Engineering",
@@ -33,13 +35,13 @@ export const metadata: Metadata = {
     "International Development Team",
   ],
   openGraph: {
-    title: "About Peace Adeniji - Senior Software Engineer",
+    title: "About Peace Adeniji - Software Engineer",
     description:
-      "Discover Peace Adeniji's journey as a Senior Software Engineer. 5+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
+      "Discover Peace Adeniji's journey as a Software Engineer. 5+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
     url: "https://peaseadeniji.com/about",
   },
   twitter: {
-    title: "About Peace Adeniji - Senior Software Engineer",
+    title: "About Peace Adeniji - Software Engineer",
     description:
       "5+ years of software engineering excellence. Specialized in React, React Native, Node.js. Leading remote teams and building scalable applications worldwide.",
   },
@@ -77,7 +79,7 @@ const About = () => {
             <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
           <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-gray-400">
-            Senior Software Engineer
+            Software Engineer
           </h1>
           <div className="pt-8 max-w-full">
             <div className="bg-gray-800/60 rounded-lg p-6 font-mono text-left border border-accent/30">
@@ -86,13 +88,6 @@ const About = () => {
                 <span className="text-gray-200">Pease</span> = &#123;
               </div>
               <div className="ml-4 space-y-1 text-sm">
-                <div>
-                  <span className="text-accent/70">role</span>:{" "}
-                  <span className="text-gray-300">
-                    &quot;Senior Software Engineer&quot;
-                  </span>
-                  ,
-                </div>
                 <div>
                   <span className="text-accent/70">expertise</span>:{" "}
                   <span className="text-gray-300">

@@ -10,6 +10,17 @@
     --accent: 254 254 91;
     /* hex value of rgb(254,254,91) color is  #FEFE5B  */
   }
+
+  /* Custom text selection styling */
+  ::selection {
+    background-color: #bcbc49b3;
+    color: white;
+  }
+
+  ::-moz-selection {
+    background-color: #bcbc49b3;
+    color: white;
+  }
 }
 
 @layer utilities {

@@ -16,7 +16,7 @@ const AboutDetails = () => {
             Professional Summary
           </h2>
           <p className="font-light  text-sm sm:text-sm md:text-base">
-            Results-driven Senior Software Engineer and Quantitative Developer
+            Results-driven Software Engineer and Quantitative Developer
             with 5+ years of experience building scalable, high-performance web
             and mobile applications. MSc in Financial Engineering from
             WorldQuant University. Expert in React, React Native, Node.js,
