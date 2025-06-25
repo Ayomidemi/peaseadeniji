@@ -167,7 +167,7 @@ export default function RootLayout({
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
-          content="google91a0fd3835748a9d.html"
+          content="DA-VhKcOmXlSVzIeGINjlk_UXrM7dWVNJxZbCJFYbLk"
         />
 
         {/* JSON-LD Structured Data */}
