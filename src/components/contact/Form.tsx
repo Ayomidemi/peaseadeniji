@@ -26,6 +26,7 @@ export default function Form() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -52,6 +53,7 @@ export default function Form() {
               id: toastId,
             }
           );
+          reset(); // Clear the form after successful submission
         },
         (error) => {
           //   console.log("FAILED...", error.text);

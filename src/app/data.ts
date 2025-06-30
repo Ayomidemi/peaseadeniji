@@ -27,17 +27,12 @@ export const projectCategories = [
   {
     id: "web",
     name: "Web Applications",
-    description: "Full-stack web platforms and e-commerce solutions",
+    description:
+      "Full-stack platforms, e-commerce, social impact projects, AI-powered apps, and 3D experiences",
     icon: "🌐",
     color: "bg-blue-500/20 text-blue-400",
   },
-  {
-    id: "social",
-    name: "Social Impact",
-    description: "Non-profit and community-focused projects",
-    icon: "🤝",
-    color: "bg-purple-500/20 text-purple-400",
-  },
+
   {
     id: "web3",
     name: "Web3 & Blockchain",
@@ -45,19 +40,27 @@ export const projectCategories = [
     icon: "🔗",
     color: "bg-orange-500/20 text-orange-400",
   },
-  {
-    id: "ai",
-    name: "AI & 3D",
-    description: "Artificial intelligence and 3D interactive applications",
-    icon: "🤖",
-    color: "bg-cyan-500/20 text-cyan-400",
-  },
+
   {
     id: "mobile",
     name: "Mobile Apps",
     description: "React Native and Flutter mobile applications",
     icon: "📱",
     color: "bg-pink-500/20 text-pink-400",
+  },
+  {
+    id: "webflow",
+    name: "Webflow Design",
+    description: "Custom websites and landing pages built with Webflow",
+    icon: "🎨",
+    color: "bg-indigo-500/20 text-indigo-400",
+  },
+  {
+    id: "quant",
+    name: "Quantitative & Research",
+    description: "Python-based quantitative analysis and financial modeling",
+    icon: "📊",
+    color: "bg-emerald-500/20 text-emerald-400",
   },
 ];
 
@@ -152,8 +155,15 @@ export const projectsData = [
     date: "2022-11-12",
     demoLink: "https://www.chessinslumsafrica.com",
     githubLink: "",
-    category: "social",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Mailchimp"],
+    category: "web",
+    technologies: [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Stripe",
+      "Mailchimp",
+      "Social Impact",
+    ],
     features: [
       "Event management",
       "Donation processing",
@@ -174,7 +184,7 @@ export const projectsData = [
     date: "2024-01-15",
     demoLink: "https://www.srk-hautehorlogerie.com",
     githubLink: "",
-    category: "web",
+    category: "webflow",
     technologies: [
       "Webflow",
       "CSS3",
@@ -283,11 +293,12 @@ export const projectsData = [
     date: "2024-07-20",
     demoLink: "https://ai-powered-threejs-t-shirt-generator.vercel.app/",
     githubLink: "",
-    category: "ai",
+    category: "web",
     technologies: [
       "React",
       "Three.js",
-      "OpenAI API",
+      "AI/OpenAI API",
+      "3D Modeling",
       "Canvas API",
       "WebGL",
       "Framer Motion",
@@ -312,8 +323,15 @@ export const projectsData = [
     date: "2022-09-18",
     demoLink: "https://www.penielday.org/",
     githubLink: "",
-    category: "social",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "EmailJS"],
+    category: "web",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "EmailJS",
+      "Social Impact",
+    ],
     features: [
       "Program management",
       "Resource library",
@@ -382,6 +400,64 @@ export const projectsData = [
     featured: true,
     status: "Live",
     image: "/projects/tradelenda.jpg",
+  },
+  {
+    id: 13,
+    name: "Eterna Jewelry",
+    description:
+      "Luxury jewelry e-commerce website showcasing handcrafted elegance and timeless designs",
+    longDescription:
+      "Eterna Jewelry is an exquisite luxury jewelry website built with Webflow, featuring handcrafted pieces from master artisans. The site showcases premium collections including necklaces, earrings, bracelets, rings, and charms, with custom engagement ring services. Features sophisticated product galleries, customer testimonials, and seamless e-commerce functionality.",
+    date: "2024-03-20",
+    demoLink: "https://eterna-jewelry.webflow.io/",
+    githubLink: "",
+    category: "webflow",
+    technologies: [
+      "Webflow",
+      "E-commerce",
+      "CMS",
+      "Responsive Design",
+      "Animation",
+      "SEO Optimization",
+    ],
+    features: [
+      "Luxury product showcase",
+      "Custom jewelry configurator",
+      "Customer testimonials",
+      "Multi-location presence",
+    ],
+    featured: false,
+    status: "Live",
+    image: "/projects/eterna-jewelry.jpg",
+  },
+  {
+    id: 14,
+    name: "Amarta Experience",
+    description:
+      "Luxury Bali resort website featuring premium accommodations and wellness experiences",
+    longDescription:
+      "Amarta Experience is a sophisticated luxury resort website built with Webflow for a premium Bali destination. The site showcases villas, residences, culinary experiences, and wellness offerings perched atop Uluwatu's sacred cliffs. Features interactive booking systems, cultural event calendars, and immersive visual storytelling that captures the essence of Balinese hospitality.",
+    date: "2024-02-15",
+    demoLink: "https://amarta-experience.webflow.io/",
+    githubLink: "",
+    category: "webflow",
+    technologies: [
+      "Webflow",
+      "Booking System",
+      "Multi-language",
+      "CMS",
+      "Interactive Design",
+      "Mobile Optimization",
+    ],
+    features: [
+      "Luxury resort showcase",
+      "Integrated booking system",
+      "Cultural event calendar",
+      "Wellness program display",
+    ],
+    featured: false,
+    status: "Live",
+    image: "/projects/amarta-experience.jpg",
   },
 ];
 

@@ -26,7 +26,7 @@ const ProjectCategoriesOverview: React.FC<ProjectCategoriesOverviewProps> = ({
 
   return (
     <section className="w-full py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
@@ -49,7 +49,7 @@ const ProjectCategoriesOverview: React.FC<ProjectCategoriesOverviewProps> = ({
               <div key={category.id} className="w-full">
                 <Link href="/projects" className="block group w-full">
                   <div
-                    className={`${category.color} rounded-xl p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-accent/20 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10 w-full min-h-[200px] flex flex-col`}
+                    className={`${category.color} rounded-xl p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-accent/20 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10 w-full min-h-[280px] flex flex-col`}
                   >
                     <div className="text-4xl mb-4">{category.icon}</div>
                     <h3 className="font-bold text-xl mb-2 group-hover:text-accent transition-colors">

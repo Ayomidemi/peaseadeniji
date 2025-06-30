@@ -6,6 +6,7 @@ import Image from "next/image";
 import bg from "../../../../public/background/Pease.png";
 // import RenderModel from "@/components/RenderModel";
 import AboutDetails from "@/components/about";
+import Navbar from "@/components/Navbar";
 
 // const HatModel = dynamic(() => import("@/components/models/HatModel"), {
 //   ssr: false,
@@ -14,9 +15,9 @@ import AboutDetails from "@/components/about";
 export const metadata: Metadata = {
   title: "About Me - Software Engineer with 5+ Years Experience",
   description:
-    "Learn about Peace Adeniji, a Software Engineer with 5+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
+    "Learn about Peace (Pease) Adeniji, a Software Engineer with 5+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
   keywords: [
-    "About Peace Adeniji",
+    "About Peace Pease Adeniji",
     "Pease Adeniji",
     "Peace Adeniji",
     "Pease",
@@ -35,13 +36,13 @@ export const metadata: Metadata = {
     "International Development Team",
   ],
   openGraph: {
-    title: "About Peace Adeniji - Software Engineer",
+    title: "About Peace (Pease) Adeniji - Software Engineer",
     description:
-      "Discover Peace Adeniji's journey as a Software Engineer. 5+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
+      "Discover Peace (Pease) Adeniji's journey as a Software Engineer. 5+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
     url: "https://peaseadeniji.com/about",
   },
   twitter: {
-    title: "About Peace Adeniji - Software Engineer",
+    title: "About Peace (Pease) Adeniji - Software Engineer",
     description:
       "5+ years of software engineering excellence. Specialized in React, React Native, Node.js. Leading remote teams and building scalable applications worldwide.",
   },
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <>
+      <Navbar />
       <Image
         src={bg}
         priority
@@ -67,7 +69,7 @@ const About = () => {
         </RenderModel>
       </div> */}
 
-      <div className="relative w-full h-screen flex flex-col items-center justify-center">
+      <div className="relative w-full h-screen flex flex-col items-center justify-center pt-16">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
           {/* Newwww */}
           <p className="uppercase text-sm xs:text-base tracking-widest text-gray-300 mb-4">
@@ -123,6 +125,7 @@ const About = () => {
                   &#125;
                 </div>
               </div>
+              <div className="text-gray-300 mt-2">&#125;;</div>
             </div>
           </div>
         </div>
