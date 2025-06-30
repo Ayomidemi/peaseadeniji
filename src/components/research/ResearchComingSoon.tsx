@@ -98,7 +98,7 @@ const ResearchComingSoon = () => {
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4 py-20">
       {/* Matrix Background Effect */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 flex flex-wrap opacity-10">
           {matrixChars.map((char, index) => (
             <motion.span
@@ -125,7 +125,7 @@ const ResearchComingSoon = () => {
             </motion.span>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <motion.div
@@ -232,7 +232,7 @@ const ResearchComingSoon = () => {
           transition={{ delay: 3, duration: 1 }}
           className="space-y-6"
         >
-          <div className="bg-gradient-to-r from-accent/20 to-transparent p-8 rounded-lg border border-accent/30 max-w-2xl mx-auto">
+          <div className="p-8 rounded-lg border border-accent/30 max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               🔬 Research Coming Soon
             </h2>

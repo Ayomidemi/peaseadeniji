@@ -5,11 +5,22 @@ import { motion } from "framer-motion";
 import { projectsData, projectCategories } from "@/app/data";
 import ProjectsShowcase from "@/components/projects/ProjectsShowcase";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
+import bg from "../../../public/background/Pease.png";
+
 
 const ProjectsPage = () => {
   return (
     <>
       <Navbar />
+      <Image
+          src={bg}
+          priority
+          sizes="100vw"
+          alt="Peace (Pease) Adeniji"
+          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
+        />
+
       <section className="w-full min-h-screen pt-36 pb-20">
         <div className="container mx-auto px-0 sm:px-6 lg:px-8">
           {/* Header Section */}
