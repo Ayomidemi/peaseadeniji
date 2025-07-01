@@ -96,7 +96,7 @@ const ResearchComingSoon = () => {
   }, [isClient]);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto px-4 py-20">
+    <div className="relative w-full max-w-6xl mx-auto px-4 py-0 sm:py-16 lg:py-20">
       {/* Matrix Background Effect */}
       {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 flex flex-wrap opacity-10">
@@ -140,7 +140,7 @@ const ResearchComingSoon = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold text-foreground"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground"
           >
             Research <span className="text-accent">Hub</span>
           </motion.h1>

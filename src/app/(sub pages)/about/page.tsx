@@ -69,7 +69,7 @@ const About = () => {
         </RenderModel>
       </div> */}
 
-      <div className="relative w-full h-screen flex flex-col items-center justify-center pt-16">
+      <div className="relative w-full h-screen flex flex-col items-center justify-center pt-12 sm:pt-16">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
           {/* Newwww */}
           <p className="uppercase text-sm xs:text-base tracking-widest text-gray-300 mb-4">

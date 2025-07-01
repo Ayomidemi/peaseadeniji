@@ -89,7 +89,7 @@ const BlogShowcase = () => {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto px-4 py-20">
+    <div className="relative w-full max-w-7xl mx-auto px-4 py-12 sm:py-16 lg:py-20">
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

@@ -19,7 +19,7 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-[100vh] flex justify-center items-center pt-16">
+      <div className="w-full min-h-[100vh] flex justify-center items-center pt-0 sm:pt-16">
         <Image
           src={bg}
           priority
@@ -39,9 +39,10 @@ const ContactPage = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-accent font-semibold text-center text-4xl capitalize"
+              className="text-white font-semibold text-center text-4xl sm:text-5xl capitalize"
             >
-              Let&apos;s Connect
+              Let&apos;s{" "}
+              <span className="text-accent">Connect</span>
             </motion.h1>
             <motion.div
               initial={{ width: 0 }}
