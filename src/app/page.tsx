@@ -6,8 +6,8 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import About from "./(sub pages)/about/page";
 import Contact from "./(sub pages)/contact/page";
-import ProjectCategoriesOverview from "@/components/projects/ProjectCategoriesOverview";
-import { projectsData, projectCategories } from "@/app/data";
+import FeaturedProjects from "@/components/projects/FeaturedProjects";
+import { projectsData } from "@/app/data";
 
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
   ssr: false,
@@ -21,8 +21,7 @@ export default function Home() {
         {" "}
         {/* Add top padding for fixed navbar */}
         <About />
-        <ProjectCategoriesOverview
-          categories={projectCategories}
+        <FeaturedProjects
           projects={projectsData}
         />
         <Contact />
