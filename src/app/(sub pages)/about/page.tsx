@@ -55,13 +55,13 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <Image
+      {/* <Image
         src={bg}
         priority
         sizes="100vw"
         alt="Pease Adeniji"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
-      />
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.02]"
+      /> */}
       {/* 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <RenderModel>
@@ -70,7 +70,7 @@ const About = () => {
       </div> */}
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center pt-12 sm:pt-16">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
+        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
           {/* Newwww */}
           <p className="uppercase text-sm xs:text-base tracking-widest text-gray-300 mb-4">
             LET&#39;S BUILD SOMETHING COOL.

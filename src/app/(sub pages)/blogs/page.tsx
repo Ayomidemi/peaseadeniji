@@ -62,7 +62,7 @@ const Blogs = () => {
         priority
         sizes="100vw"
         alt="Peace (Pease) Adeniji Blogs"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
       />
 
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-0 sm:pt-16">

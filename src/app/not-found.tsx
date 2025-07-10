@@ -81,7 +81,7 @@ const NotFound = () => {
         priority
         sizes="100vw"
         alt="Background"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
       />
 
       <div className="relative z-10 text-center px-4 py-12 max-w-4xl mx-auto">

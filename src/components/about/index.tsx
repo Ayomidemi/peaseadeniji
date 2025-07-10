@@ -75,7 +75,7 @@ const AboutDetails = () => {
                 <p className="text-sm text-foreground/80">
                   WorldQuant University
                 </p>
-                <p className="text-sm text-muted">2026</p>
+                <p className="text-sm text-muted">2027</p>
                 <p className="text-sm text-muted mt-1">
                   Quantitative Finance • Risk Management • Portfolio
                   Optimization
@@ -96,67 +96,6 @@ const AboutDetails = () => {
             </div>
           </ItemLayout>
 
-          {/* Key Achievements */}
-          <ItemLayout
-            className={"col-span-full md:col-span-6 flex-col items-start"}
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Key Achievements
-            </h3>
-            <ul className="space-y-2 text-sm sm:text-sm">
-              <li className="flex items-start gap-2">
-                <span className="text-accent">•</span>
-                <span>
-                  Led internationalization expanding apps to 4+ languages and
-                  currencies
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent">•</span>
-                <span>
-                  Improved frontend performance by 35% through UI optimization
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent">•</span>
-                <span>
-                  Reduced release cycle time by 40% through automated deployment
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent">•</span>
-                <span>Led team of 5 developers across multiple time zones</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent">•</span>
-                <span>
-                  Developed quantitative models for financial risk assessment
-                </span>
-              </li>
-            </ul>
-          </ItemLayout>
-
-          {/* Core Technologies */}
-          <ItemLayout
-            className={"col-span-full md:col-span-6 flex-col items-start"}
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Programming Languages
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {["JavaScript", "TypeScript", "Python", "C++"].map(
-                (lang, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm sm:text-sm font-medium"
-                  >
-                    {lang}
-                  </span>
-                )
-              )}
-            </div>
-          </ItemLayout>
-
           {/* Frameworks & Technologies */}
           <ItemLayout
             className={"col-span-full md:col-span-6 flex-col items-start"}
@@ -166,13 +105,23 @@ const AboutDetails = () => {
             </h3>
             <div className="flex flex-wrap gap-2">
               {[
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "C++",
                 "React",
                 "React Native",
                 "Next.js",
                 "Node.js",
+                "Nest.js",
                 "Express.js",
                 "Django",
                 "Flask",
+                "PostgreSQL",
+                "MongoDB",
+                "Docker",
+                "Kubernetes",
+                "CI/CD",
               ].map((tech, index) => (
                 <span
                   key={index}
@@ -185,84 +134,14 @@ const AboutDetails = () => {
           </ItemLayout>
 
           {/* All Skills Icons */}
-          <ItemLayout className={"col-span-full"}>
+          {/* <ItemLayout className={"col-span-full"}>
             <img
               className="w-full h-auto"
               src={`https://skillicons.dev/icons?i=js,ts,python,cpp,react,nodejs,nextjs,flutter,dart,swift,java,aws,azure,docker,git,github,mongodb,postgresql,firebase,tailwind,figma,vscode`}
               alt="Pease Adeniji Technical Skills"
               loading="lazy"
             />
-          </ItemLayout>
-
-          {/* Languages */}
-          <ItemLayout
-            className={
-              "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
-            }
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Languages
-            </h3>
-            <div className="space-y-2 w-full text-sm sm:text-sm">
-              <div className="flex justify-between">
-                <span>English</span>
-                <span className="text-muted">Full Professional</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Yoruba</span>
-                <span className="text-muted">Native/Bilingual</span>
-              </div>
-            </div>
-          </ItemLayout>
-
-          {/* Availability */}
-          <ItemLayout
-            className={
-              "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
-            }
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Availability
-            </h3>
-            <div className="space-y-1 text-sm sm:text-sm">
-              <p className="text-accent font-semibold">
-                Open to New Opportunities
-              </p>
-              <p className="text-foreground/80">Remote & Hybrid Roles</p>
-              <p className="text-muted">Full-time, Contract & Consulting</p>
-              <p className="text-muted">Available Worldwide</p>
-            </div>
-          </ItemLayout>
-
-          <ItemLayout
-            className={
-              "col-span-full xs:col-span-6 lg:col-span-4 flex-col items-start"
-            }
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Interests
-            </h3>
-            <div className="flex flex-wrap gap-1">
-              {[
-                "Mathematics",
-                "Volunteering",
-                "Swimming",
-                "Reading",
-                "Writing",
-                "Pottery",
-                "Violin",
-                "Research",
-                "Mentorship",
-              ].map((interest, index) => (
-                <span
-                  key={index}
-                  className="px-2 py-1 bg-muted/10 text-foreground/80 rounded text-sm"
-                >
-                  {interest}
-                </span>
-              ))}
-            </div>
-          </ItemLayout>
+          </ItemLayout> */}
         </div>
       </div>
     </section>

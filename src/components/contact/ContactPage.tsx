@@ -19,13 +19,13 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-[100vh] flex justify-center items-center pt-0 sm:pt-16">
+      <div className="w-full min-h-[100vh] flex justify-center items-center pt-0">
         <Image
           src={bg}
           priority
           sizes="100vw"
           alt="Peace (Pease) Adeniji"
-          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
+          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
         />
 
         <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">

@@ -17,7 +17,7 @@ const ProjectsPage = () => {
         priority
         sizes="100vw"
         alt="Peace (Pease) Adeniji"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.05]"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
       />
 
       <section className="w-full min-h-screen pt-10 sm:pt-20 lg:pt-36 pb-20">

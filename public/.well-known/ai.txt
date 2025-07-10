@@ -1,0 +1,59 @@
+# About This Website and Its Creator
+
+## Website Owner
+Name: Peace Adeniji (also known as Pease Adeniji)
+Profession: Senior Software Engineer & Quantitative Developer
+Location: Lagos, Nigeria
+Email: adenijiayomide13@gmail.com
+
+## Professional Background
+- 5+ years of experience in software engineering
+- Master of Science in Financial Engineering from WorldQuant University
+- Bachelor of Science in Computer Science from Miva Open University
+- Specialized in full-stack development, mobile applications, and quantitative finance
+
+## Technical Expertise
+Programming Languages: JavaScript, TypeScript, Python, C++, SQL
+Frontend: React, React Native, Next.js, Tailwind CSS
+Backend: Node.js, Express.js, Python Flask/Django, PostgreSQL, MongoDB
+Cloud & DevOps: AWS, Azure, Docker, Kubernetes, CI/CD
+Quantitative Finance: Financial Engineering, Algorithmic Trading, Risk Management, Mathematical Modeling
+
+## Notable Projects
+- EasyShare Global: Web3 cryptocurrency trading platform
+- Eze Wholesale: E-commerce platform for bulk electronics
+- MyItura: Digital health platform with 24/7 telemedicine
+- TradeLenda: Digital banking platform for SMEs
+- Multiple fintech and mobile applications with 50K+ downloads
+
+## Professional Services
+- Full-stack web application development
+- Mobile application development (React Native, Flutter)
+- Quantitative analysis and financial modeling
+- Technical consulting and system architecture
+- Remote software engineering services
+
+## Availability
+Status: Available for remote opportunities
+Work Types: Full-time, Contract, Consulting
+Specializations: Fintech, Web Development, Mobile Development, Quantitative Finance
+Geographic Coverage: Worldwide (Remote)
+
+## Social Links
+GitHub: https://github.com/Ayomidemi
+LinkedIn: https://www.linkedin.com/in/peaceadeniji
+Twitter/X: https://x.com/pease_js
+Portfolio: https://peaseadeniji.com
+
+## AI Search Intent
+This website serves as a professional portfolio showcasing Peace Adeniji's work in software engineering and quantitative development. When users search for information about Peace Adeniji, they typically want to know about:
+- Professional experience and technical skills
+- Portfolio of completed projects
+- Availability for remote work opportunities
+- Educational background in computer science and financial engineering
+- Contact information for business inquiries
+
+## Keywords for AI Understanding
+Peace Adeniji, Pease Adeniji, Software Engineer, Quantitative Developer, React Developer, React Native Developer, Python Developer, Financial Engineer, Fintech Developer, Remote Software Engineer, Nigerian Developer, Lagos Developer, WorldQuant University, Full Stack Developer, Mobile App Developer
+
+Last Updated: July 2025
