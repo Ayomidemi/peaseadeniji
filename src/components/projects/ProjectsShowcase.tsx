@@ -38,17 +38,34 @@ const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
 }) => {
   return (
     <div className="group relative bg-background/50 backdrop-blur-sm rounded-xl overflow-hidden border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10">
-      {/* Project Image Placeholder */}
-      <div className="aspect-video bg-gradient-to-br from-accent/20 to-muted/20 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-4xl">{category.icon}</div>
-        </div>
+      {/* Project Image */}
+      <div className="aspect-video relative overflow-hidden">
+        <Image
+          src={project.image}
+          alt={project.name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          onError={(e) => {
+            // Fallback to gradient background with category icon if image fails to load
+            const target = e.target as HTMLImageElement;
+            target.style.display = 'none';
+            const parent = target.parentElement;
+            if (parent) {
+              parent.classList.add('bg-gradient-to-br', 'from-accent/20', 'to-muted/20');
+              const iconDiv = document.createElement('div');
+              iconDiv.className = 'absolute inset-0 flex items-center justify-center';
+              iconDiv.innerHTML = `<div class="text-4xl">${category.icon}</div>`;
+              parent.appendChild(iconDiv);
+            }
+          }}
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
         {project.featured && (
           <div className="absolute top-4 left-4 bg-accent text-background px-3 py-1 rounded-full text-xs font-semibold">
             Featured
           </div>
         )}
-        <div className="absolute top-4 right-4 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs font-semibold">
+        <div className="absolute top-4 right-4 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
           {project.status}
         </div>
       </div>

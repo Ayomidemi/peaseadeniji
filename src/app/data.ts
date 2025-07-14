@@ -92,7 +92,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/easyshare.jpg",
+    image: "/projects/easyshare.png",
   },
   {
     id: 2,
@@ -114,7 +114,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/eze-wholesale.jpg",
+    image: "/projects/eze-wholesale.png",
   },
   {
     id: 3,
@@ -143,7 +143,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/eze-enterprise.jpg",
+    image: "/projects/eze-enterprise.png",
   },
   {
     id: 4,
@@ -172,7 +172,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/chess-in-slums.jpg",
+    image: "/projects/chess-in-slums.png",
   },
   {
     id: 5,
@@ -201,7 +201,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/srk-haute-horlogerie.jpg",
+    image: "/projects/srk-haute-horlogerie.png",
   },
   {
     id: 6,
@@ -230,7 +230,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/horizon-banking.jpg",
+    image: "/projects/horizon-banking.png",
   },
   {
     id: 7,
@@ -252,7 +252,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/apple-clone.jpg",
+    image: "/projects/apple-clone.png",
   },
   {
     id: 8,
@@ -281,7 +281,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/nft-marketplace.jpg",
+    image: "/projects/nft-marketplace.png",
   },
   {
     id: 9,
@@ -291,7 +291,7 @@ export const projectsData = [
     longDescription:
       "An innovative 3D application using Three.js and AI to generate custom t-shirt designs. Users can interact with 3D models, apply AI-generated designs, and visualize products in real-time.",
     date: "2024-07-20",
-    demoLink: "https://ai-powered-threejs-t-shirt-generator.vercel.app/",
+    demoLink: "https://ai-powered-threejs-t-shirt-generato.vercel.app/",
     githubLink: "",
     category: "web",
     technologies: [
@@ -311,7 +311,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/ai-tshirt.jpg",
+    image: "/projects/ai-tshirt.png",
   },
   {
     id: 10,
@@ -340,7 +340,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/peniel-day.jpg",
+    image: "/projects/peniel-day.png",
   },
   {
     id: 11,
@@ -369,7 +369,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/myitura.jpg",
+    image: "/projects/myitura.png",
   },
   {
     id: 12,
@@ -399,7 +399,7 @@ export const projectsData = [
     ],
     featured: true,
     status: "Live",
-    image: "/projects/tradelenda.jpg",
+    image: "/projects/tradelenda.png",
   },
   {
     id: 13,
@@ -428,7 +428,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/eterna-jewelry.jpg",
+    image: "/projects/eterna-jewelry.png",
   },
   {
     id: 14,
@@ -457,7 +457,7 @@ export const projectsData = [
     ],
     featured: false,
     status: "Live",
-    image: "/projects/amarta-experience.jpg",
+    image: "/projects/amarta-experience.png",
   },
 ];
 

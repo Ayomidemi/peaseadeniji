@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface Project {
@@ -15,6 +16,7 @@ interface Project {
   technologies: string[];
   featured: boolean;
   status: string;
+  image: string;
 }
 
 interface FeaturedProjectsProps {
@@ -109,18 +111,42 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ projects }) => {
               variants={itemVariants}
               className="group relative"
             >
-              <div className="bg-background border border-accent/20 rounded-2xl p-8 hover:border-accent/40 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 h-full">
+              <div className="bg-background border border-accent/20 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 h-full">
+                {/* Project Image */}
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      // Fallback to gradient background with category icon if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.classList.add('bg-gradient-to-br', 'from-accent/20', 'to-muted/20');
+                        const iconDiv = document.createElement('div');
+                        iconDiv.className = 'absolute inset-0 flex items-center justify-center';
+                        iconDiv.innerHTML = `<div class="text-4xl">${getCategoryIcon(project.category)}</div>`;
+                        parent.appendChild(iconDiv);
+                      }
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
+                  <div className="absolute top-4 right-4 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
+                    {project.status}
+                  </div>
+                </div>
+
                 {/* Project Header */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className="flex items-center space-x-3">
-                    <span className="text-2xl">
-                      {getCategoryIcon(project.category)}
-                    </span>
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-6">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors mb-2">
                         {project.name}
                       </h3>
-                      <div className="flex items-center space-x-2 mt-1">
+                      <div className="flex items-center space-x-2">
                         <span
                           className={`px-2 py-1 rounded-full text-xs font-medium border ${getCategoryColor(
                             project.category
@@ -129,13 +155,9 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ projects }) => {
                           {project.category.charAt(0).toUpperCase() +
                             project.category.slice(1)}
                         </span>
-                        <span className="px-2 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
-                          {project.status}
-                        </span>
                       </div>
                     </div>
                   </div>
-                </div>
 
                 {/* Project Description */}
                 <p className="text-muted text-sm md:text-base leading-relaxed mb-6">
@@ -187,6 +209,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ projects }) => {
                       />
                     </svg>
                   </Link>
+                </div>
                 </div>
               </div>
             </motion.div>
