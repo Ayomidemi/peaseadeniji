@@ -85,7 +85,6 @@ const NotFound = () => {
       />
 
       <div className="relative z-10 text-center px-4 py-12 max-w-4xl mx-auto">
-        {/* 404 Header with Glitch Effect */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
