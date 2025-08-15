@@ -18,8 +18,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between relative overflow-hidden px-6 sm:px-8">
       <Navbar />
       <div className="pt-16">
-        {" "}
-        {/* Add top padding for fixed navbar */}
         <About />
         <FeaturedProjects
           projects={projectsData}
