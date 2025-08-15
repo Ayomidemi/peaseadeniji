@@ -1,8 +1,5 @@
-// import Image from "next/image";
 import dynamic from "next/dynamic";
 
-// import bg from "../../public/background/bg-image.png";
-// import RenderModel from "@/components/RenderModel";
 import Navbar from "@/components/Navbar";
 import About from "./(sub pages)/about/page";
 import Contact from "./(sub pages)/contact/page";
@@ -19,9 +16,7 @@ export default function Home() {
       <Navbar />
       <div className="pt-16">
         <About />
-        <FeaturedProjects
-          projects={projectsData}
-        />
+        <FeaturedProjects projects={projectsData} />
         <Contact />
       </div>
     </main>
