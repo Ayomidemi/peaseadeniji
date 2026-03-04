@@ -46,7 +46,7 @@ const Navbar = () => {
     },
     {
       name: "Twitter",
-      href: "https://x.com/pease_js",
+      href: "https://x.com/peaseadeniji",
       external: true,
       icon: (
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

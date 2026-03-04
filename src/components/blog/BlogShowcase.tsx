@@ -20,6 +20,17 @@ const BlogShowcase = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
+      title: "All of the People That I Am",
+      excerpt:
+        "I am a mosaic of everyone I have ever loved, even if only for a heartbeat. From noodles made like a roommate once did, to songs, books, and rainy Saturday mornings borrowed from almost-lovers and friends, I exist in habits I picked up from people who no longer stay. This is a quiet homage to all the fingerprints others have left on the person I am becoming.",
+      readTime: "2 min read",
+      category: "Personal Essays",
+      date: "2025",
+      url: "https://medium.com/@peaseadeniji/all-of-the-people-that-i-am-9c1d9234bfe7",
+      featured: false,
+    },
+    {
+      id: 2,
       title: "I Hate Being a Woman, But Let Me Tell You Why",
       excerpt:
         "I said I hated being a woman and everyone asked if I was on my period. This is why that question misses the point entirely. From security guards who hang up on you to the reality that your voice goes shrill when you try to assert authority, sometimes the very body you love betrays you in a world that refuses to take you seriously.",
@@ -30,7 +41,7 @@ const BlogShowcase = () => {
       featured: false,
     },
     {
-      id: 2,
+      id: 3,
       title: "The Love Letter I Never Got to Pen",
       excerpt:
         "For all the words that stayed trapped in my throat, all the feelings that lived in the space between 'almost' and 'never.' This is for the love that existed in possibility, the tenderness that bloomed in silence, and the letters that live forever unwritten.",
@@ -41,7 +52,7 @@ const BlogShowcase = () => {
       featured: false,
     },
     {
-      id: 3,
+      id: 4,
       title:
         "What If the Loudest Asset in the Room Is the Only One Telling the Truth",
       excerpt:
@@ -53,7 +64,7 @@ const BlogShowcase = () => {
       featured: false,
     },
     {
-      id: 4,
+      id: 5,
       title: "Blessings by Chukwuebuka Ibeh: A Book That Met Me Where I Was",
       excerpt:
         "When you're drowning in your own thoughts, sometimes the right book throws you a lifeline. This is about finding yourself reflected in someone else's words and realizing you're not as alone as you thought. Some books don't just tell stories, they hold you.",
@@ -224,7 +235,7 @@ const BlogShowcase = () => {
                   className="absolute inset-0 border border-accent/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{
                     background:
-                      "linear-gradient(135deg, rgba(254, 254, 91, 0.05) 0%, transparent 100%)",
+                      "linear-gradient(135deg, rgba(232, 170, 85, 0.08) 0%, transparent 100%)",
                   }}
                 />
               </div>
