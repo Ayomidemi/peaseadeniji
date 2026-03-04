@@ -81,7 +81,7 @@ const About = () => {
             <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
           <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-3 text-black">
-            Software Engineer
+            A Software Engineer
           </h1>
           <div className="pt-8 max-w-full">
             <div className="bg-background rounded-lg p-6 font-mono text-left border border-accent/30 shadow-sm">
