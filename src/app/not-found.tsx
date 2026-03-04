@@ -75,7 +75,7 @@ const NotFound = () => {
   }, [currentLineIndex, terminalSequence, isClient]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-background">
       <Image
         src={bg}
         priority
@@ -86,18 +86,14 @@ const NotFound = () => {
 
       <div className="relative z-10 text-center px-4 py-12 max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
           <div className="relative">
             <motion.h1
-              className="text-8xl md:text-9xl font-bold text-accent font-mono"
-              style={{
-                textShadow: "0 0 30px rgba(254, 254, 91, 0.5)",
-                filter: "brightness(1.2)",
-              }}
+              className="text-7xl md:text-8xl font-extrabold text-accent font-mono"
             >
               {glitchText}
             </motion.h1>
@@ -117,12 +113,14 @@ const NotFound = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mb-12"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Page Not <span className="text-accent">Found</span>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+            This page wandered off{" "}
+            <span className="text-accent">the path</span>
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed">
-            Looks like this page got lost in the digital void. Don&apos;t worry,
-            even the best algorithms sometimes take wrong turns.
+            Looks like this page got a little lost. Don&apos;t worry, it
+            happens to the best explorers—let&apos;s gently guide you back
+            home.
           </p>
         </motion.div>
 
@@ -131,13 +129,15 @@ const NotFound = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="bg-background/80 backdrop-blur-sm border border-accent/30 rounded-lg p-6 mb-12 max-w-2xl mx-auto"
+          className="bg-background/90 backdrop-blur-sm border border-foreground/10 rounded-2xl p-6 mb-12 max-w-2xl mx-auto shadow-sm"
         >
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 bg-red-500 rounded-full" />
             <div className="w-3 h-3 bg-yellow-500 rounded-full" />
             <div className="w-3 h-3 bg-green-500 rounded-full" />
-            <span className="text-muted text-sm font-mono ml-2">terminal</span>
+            <span className="text-muted text-sm font-mono ml-2">
+              soft-terminal
+            </span>
           </div>
           <div className="text-left space-y-2 min-h-[200px]">
             {terminalLines.map((line, index) => (
@@ -146,7 +146,7 @@ const NotFound = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
-                className="font-mono text-sm text-accent/80"
+                className="font-mono text-sm text-foreground/70"
               >
                 {line}
                 {index === terminalLines.length - 1 && (
@@ -165,7 +165,7 @@ const NotFound = () => {
               </motion.div>
             ))}
             {!isClient && (
-              <div className="font-mono text-sm text-accent/80">
+              <div className="font-mono text-sm text-foreground/60">
                 Loading terminal...
               </div>
             )}
@@ -186,7 +186,7 @@ const NotFound = () => {
                 boxShadow: "0 10px 30px rgba(254, 254, 91, 0.3)",
               }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-8 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+              className="flex items-center gap-2 px-8 py-3 bg-accent text-background font-semibold rounded-full hover:bg-accent/95 transition-colors shadow-md"
             >
               <span>←</span>
               Go Home
@@ -197,7 +197,7 @@ const NotFound = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-8 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors"
+              className="flex items-center gap-2 px-8 py-3 border border-accent/60 text-accent font-semibold rounded-full hover:bg-accent/10 transition-colors"
             >
               <span>🚀</span>
               View Projects
@@ -208,7 +208,7 @@ const NotFound = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-8 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors"
+              className="flex items-center gap-2 px-8 py-3 border border-accent/60 text-accent font-semibold rounded-full hover:bg-accent/10 transition-colors"
             >
               <span>💬</span>
               Get In Touch
@@ -234,9 +234,9 @@ const NotFound = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 2.2 + index * 0.1 }}
-              className="bg-background/40 backdrop-blur-sm border border-accent/20 rounded-lg p-4 text-center"
+              className="bg-background/80 backdrop-blur-sm border border-foreground/5 rounded-xl p-4 text-center shadow-sm"
             >
-              <div className="font-mono text-xs text-accent font-bold">
+              <div className="font-mono text-xs text-accent font-semibold">
                 {error.code}
               </div>
               <div className="text-xs text-muted mt-1">{error.desc}</div>
@@ -251,8 +251,9 @@ const NotFound = () => {
           transition={{ delay: 3, duration: 1 }}
           className="mt-12 text-center"
         >
-          <p className="text-muted/60 text-sm font-mono">
-            🔍 Debugging tip: Check the URL or try navigating from the homepage
+          <p className="text-muted/70 text-sm font-mono">
+            🔍 Gentle tip: Check the URL spelling, or start fresh from the
+            homepage.
           </p>
         </motion.div>
       </div>

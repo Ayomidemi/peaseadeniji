@@ -67,15 +67,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-accent/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-foreground/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center font-bold text-background group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 bg-accent/90 rounded-xl flex items-center justify-center font-bold text-background group-hover:scale-110 group-hover:bg-accent transition-all shadow-sm">
               P
             </div>
-            <span className="font-bold text-lg text-foreground group-hover:text-accent transition-colors">
+            <span className="font-semibold text-base sm:text-lg text-foreground/90 group-hover:text-accent transition-colors">
               Pease
             </span>
           </Link>
@@ -86,8 +86,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  pathname === item.href ? "text-accent" : "text-foreground/80"
+                className={`text-sm font-medium tracking-wide transition-colors hover:text-accent ${
+                  pathname === item.href
+                    ? "text-accent"
+                    : "text-foreground/70"
                 }`}
               >
                 {item.name}
@@ -96,7 +98,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3">
             {socialLinks.map((link) => (
               <Link
                 key={link.name}
@@ -105,10 +107,10 @@ const Navbar = () => {
                   target: "_blank",
                   rel: "noopener noreferrer",
                 })}
-                className="w-8 h-8 rounded-full bg-muted/20 hover:bg-accent/20 flex items-center justify-center transition-colors group"
+                className="w-8 h-8 rounded-full bg-foreground/5 hover:bg-accent/10 flex items-center justify-center transition-colors group shadow-sm"
                 title={link.name}
               >
-                <span className="text-foreground group-hover:text-accent transition-colors">
+                <span className="text-foreground/80 group-hover:text-accent transition-colors">
                   {link.icon}
                 </span>
               </Link>

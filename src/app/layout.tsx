@@ -161,7 +161,8 @@ export default function RootLayout({
       <head>
         {/* Additional SEO meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#1b1b1b" />
+        {/* Match warm light background */}
+        <meta name="theme-color" content="#f5f2ec" />
         <meta name="color-scheme" content="dark light" />
 
         {/* PWA Manifest */}
