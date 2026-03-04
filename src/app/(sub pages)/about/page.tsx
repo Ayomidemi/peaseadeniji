@@ -60,7 +60,7 @@ const About = () => {
         priority
         sizes="100vw"
         alt="Pease Adeniji"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.02]"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.04]"
       /> */}
       {/* 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
@@ -72,52 +72,52 @@ const About = () => {
       <div className="relative w-full h-screen flex flex-col items-center justify-center pt-12 sm:pt-16">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
           {/* Newwww */}
-          <p className="uppercase text-sm xs:text-base tracking-widest text-gray-300 mb-4">
+          <p className="uppercase text-sm xs:text-base tracking-widest text-black mb-4">
             LET&#39;S BUILD SOMETHING COOL.
           </p>
 
-          <h1 className="font-bold text-4xl lg:text-6xl">
+          <h1 className="font-bold text-4xl lg:text-6xl text-foreground">
             Hi, I&#39;m{" "}
             <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
-          <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-gray-400">
+          <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-black">
             Software Engineer
           </h1>
           <div className="pt-8 max-w-full">
-            <div className="bg-gray-800/60 rounded-lg p-6 font-mono text-left border border-accent/30">
-              <div className="text-gray-300 mb-2">
-                <span className="text-accent/80">const</span>{" "}
-                <span className="text-gray-200">Pease</span> = &#123;
+            <div className="bg-background rounded-lg p-6 font-mono text-left border border-accent/30 shadow-sm">
+              <div className="text-foreground mb-2">
+                <span className="text-accent">const</span>{" "}
+                <span className="text-foreground">Pease</span> = &#123;
               </div>
               <div className="ml-4 space-y-1 text-sm">
                 <div>
-                  <span className="text-accent/70">expertise</span>:{" "}
-                  <span className="text-gray-300">
+                  <span className="text-accent">expertise</span>:{" "}
+                  <span className="text-black">
                     &quot;Building scalable apps that impact thousands&quot;
                   </span>
                   ,
                 </div>
                 <div>
-                  <span className="text-accent/70">techStack</span>: [
-                  <span className="text-gray-300">&quot;React&quot;</span>,{" "}
-                  <span className="text-gray-300">&quot;Node.js&quot;</span>,{" "}
-                  <span className="text-gray-300">&quot;Python&quot;</span>,{" "}
-                  <span className="text-gray-300">&quot;C++&quot;</span>],
+                  <span className="text-accent">techStack</span>: [
+                  <span className="text-black">&quot;React&quot;</span>,{" "}
+                  <span className="text-black">&quot;Node.js&quot;</span>,{" "}
+                  <span className="text-black">&quot;Python&quot;</span>,{" "}
+                  <span className="text-black">&quot;C++&quot;</span>],
                 </div>
                 <div>
-                  <span className="text-accent/70">passion</span>:{" "}
-                  <span className="text-gray-300">
+                  <span className="text-accent">passion</span>:{" "}
+                  <span className="text-black">
                     &quot;Fintech &amp; Social Impact&quot;
                   </span>
                   ,
                 </div>
                 <div>
-                  <span className="text-accent/70">collaborate</span>:{" "}
-                  <span className="text-gray-200">()</span>{" "}
-                  <span className="text-accent/80">=&gt;</span> &#123;
+                  <span className="text-accent">collaborate</span>:{" "}
+                  <span className="text-foreground">()</span>{" "}
+                  <span className="text-accent">=&gt;</span> &#123;
                   <div className="ml-4">
-                    <span className="text-accent/80">return</span>{" "}
-                    <span className="text-gray-300">
+                    <span className="text-accent">return</span>{" "}
+                    <span className="text-black">
                       &quot;Let&apos;s build something amazing&quot;
                     </span>
                     ;
@@ -125,7 +125,7 @@ const About = () => {
                   &#125;
                 </div>
               </div>
-              <div className="text-gray-300 mt-2">&#125;;</div>
+              <div className="text-black mt-2">&#125;;</div>
             </div>
           </div>
         </div>

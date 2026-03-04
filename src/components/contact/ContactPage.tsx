@@ -25,7 +25,7 @@ const ContactPage = () => {
           priority
           sizes="100vw"
           alt="Peace (Pease) Adeniji"
-          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
+          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.04]"
         />
 
         <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
@@ -39,7 +39,7 @@ const ContactPage = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-white font-semibold text-center text-4xl sm:text-5xl capitalize"
+              className="text-foreground font-semibold text-center text-4xl sm:text-5xl capitalize"
             >
               Let&apos;s{" "}
               <span className="text-accent">Connect</span>

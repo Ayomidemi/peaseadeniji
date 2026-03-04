@@ -81,7 +81,7 @@ const NotFound = () => {
         priority
         sizes="100vw"
         alt="Background"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.03]"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.04]"
       />
 
       <div className="relative z-10 text-center px-4 py-12 max-w-4xl mx-auto">
@@ -183,7 +183,7 @@ const NotFound = () => {
             <motion.button
               whileHover={{
                 scale: 1.05,
-                boxShadow: "0 10px 30px rgba(254, 254, 91, 0.3)",
+                boxShadow: "0 10px 30px rgba(86, 124, 228, 0.35)",
               }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-8 py-3 bg-accent text-background font-semibold rounded-full hover:bg-accent/95 transition-colors shadow-md"

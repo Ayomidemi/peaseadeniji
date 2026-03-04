@@ -10,7 +10,7 @@ const AboutDetails = () => {
         <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
           <ItemLayout
             className={
-              " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
+              "col-span-full lg:col-span-8 row-span-2 flex-col items-start"
             }
           >
             <h2 className="text-xl md:text-2xl text-left w-full capitalize">
@@ -18,7 +18,7 @@ const AboutDetails = () => {
             </h2>
             <p className="font-light  text-sm sm:text-sm md:text-base">
               Results-driven Software Engineer and Quantitative Developer with
-              5+ years of experience building scalable, high-performance web and
+              {' '}{new Date().getFullYear() - 2020}+ years of experience building scalable, high-performance web and
               mobile applications. MSc in Financial Engineering from WorldQuant
               University. Expert in React, React Native, Node.js, Next.js,
               Python, C++, and quantitative finance. Proven track record in
@@ -44,7 +44,7 @@ const AboutDetails = () => {
             className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
           >
             <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-              5+{" "}
+            {new Date().getFullYear() - 2020}+{" "}
               <sub className="font-semibold text-base">years of experience</sub>
             </p>
           </ItemLayout>
@@ -54,7 +54,7 @@ const AboutDetails = () => {
           >
             <img
               className="w-full h-full"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=567CE4&text_color=FFFFFF&icon_color=567CE4&text_bold=false`}
               alt="Pease Adeniji"
               loading="lazy"
             />
@@ -88,7 +88,7 @@ const AboutDetails = () => {
                 <p className="text-sm text-foreground/80">
                   Miva Open University
                 </p>
-                <p className="text-sm text-muted">2025</p>
+                <p className="text-sm text-muted">2026</p>
                 <p className="text-sm text-muted mt-1">
                   Software Engineering • Data Structures • Algorithms
                 </p>

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-interface BlogPost {
+export interface BlogPost {
   id: number;
   title: string;
   excerpt: string;
@@ -14,10 +14,7 @@ interface BlogPost {
   featured: boolean;
 }
 
-const BlogShowcase = () => {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
-  const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPost[] = [
     {
       id: 1,
       title: "All of the People That I Am",
@@ -74,7 +71,10 @@ const BlogShowcase = () => {
       url: "https://medium.com/@peaseadeniji/blessings-by-chukwuebuka-ibeh-a-book-that-met-me-where-i-was-489987f563fa",
       featured: false,
     },
-  ];
+];
+
+const BlogShowcase = () => {
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -235,7 +235,7 @@ const BlogShowcase = () => {
                   className="absolute inset-0 border border-accent/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{
                     background:
-                      "linear-gradient(135deg, rgba(232, 170, 85, 0.08) 0%, transparent 100%)",
+                      "linear-gradient(135deg, rgba(86, 124, 228, 0.10) 0%, transparent 100%)",
                   }}
                 />
               </div>

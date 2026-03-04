@@ -4,23 +4,23 @@
 
 @layer base {
   :root {
-    /* Light, warm default theme */
+    /* Light background with soft blue accent */
     --background: 245 242 236; /* warm off-white */
-    --foreground: 34 27 23; /* deep warm brown/graphite */
-    --muted: 140 130 120; /* soft warm gray for secondary text */
-    --accent: 232 170 85; /* soft amber/gold accent */
-    /* hex value of rgb(232,170,85) color is #E8AA55 */
+    --foreground: 27 32 45; /* cool deep slate */
+    --muted: 120 130 145; /* soft cool gray for secondary text */
+    --accent: 86 124 228; /* gentle cornflower blue accent */
+    /* hex value of rgb(86,124,228) color is #567CE4 */
   }
 
   /* Custom text selection styling */
   ::selection {
-    background-color: rgba(232, 170, 85, 0.3);
-    color: #221b17;
+    background-color: rgba(86, 124, 228, 0.35);
+    color: #1b202d;
   }
 
   ::-moz-selection {
-    background-color: rgba(232, 170, 85, 0.3);
-    color: #221b17;
+    background-color: rgba(86, 124, 228, 0.35);
+    color: #1b202d;
   }
 }
 

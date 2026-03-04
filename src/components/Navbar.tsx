@@ -67,7 +67,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-foreground/5">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-md border-b border-foreground/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -89,7 +89,7 @@ const Navbar = () => {
                 className={`text-sm font-medium tracking-wide transition-colors hover:text-accent ${
                   pathname === item.href
                     ? "text-accent"
-                    : "text-foreground/70"
+                    : "text-foreground"
                 }`}
               >
                 {item.name}
@@ -110,7 +110,7 @@ const Navbar = () => {
                 className="w-8 h-8 rounded-full bg-foreground/5 hover:bg-accent/10 flex items-center justify-center transition-colors group shadow-sm"
                 title={link.name}
               >
-                <span className="text-foreground/80 group-hover:text-accent transition-colors">
+                <span className="text-foreground group-hover:text-accent transition-colors">
                   {link.icon}
                 </span>
               </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                   className={`text-sm font-medium transition-colors hover:text-accent ${
                     pathname === item.href
                       ? "text-accent"
-                      : "text-foreground/80"
+                      : "text-foreground"
                   }`}
                 >
                   {item.name}
