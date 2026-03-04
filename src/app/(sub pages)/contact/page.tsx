@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Peace (Pease) Adeniji - Software Engineer for Hire",
     description:
-      "Ready to hire a Software Engineer? Peace (Pease) Adeniji is available for remote opportunities worldwide. 5+ years experience in React, React Native, Node.js. Contact for collaboration.",
+      "Ready to hire a Software Engineer? Peace (Pease) Adeniji is available for remote opportunities worldwide. 6+ years experience in React, React Native, Node.js. Contact for collaboration.",
     url: "https://peaseadeniji.com/contact",
   },
   twitter: {
     title: "Hire Peace (Pease) Adeniji - Software Engineer",
     description:
-      "Software Engineer available for remote work. 5+ years experience, expert in React/Node.js. Open to full-time, contract & consulting opportunities.",
+      "Software Engineer available for remote work. 6+ years experience, expert in React/Node.js. Open to full-time, contract & consulting opportunities.",
   },
   alternates: {
     canonical: "/contact",

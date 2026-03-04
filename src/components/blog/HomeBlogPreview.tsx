@@ -8,7 +8,7 @@ const HomeBlogPreview = () => {
   const topPosts = blogPosts.slice(0, 2);
 
   return (
-    <section className="w-full py-16">
+    <section className="w-full pt-24 pb-12 sm:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>

@@ -30,7 +30,7 @@ Education:
 - BSc Marine Biology, University of Lagos (2019-2023)
 
 Experience:
-- 5+ years in Software Engineering
+- 6+ years in Software Engineering
 - Full-stack web and mobile development
 - Quantitative finance and financial modeling
 - Leading remote engineering teams

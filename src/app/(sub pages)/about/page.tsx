@@ -13,9 +13,9 @@ import Navbar from "@/components/Navbar";
 // });
 
 export const metadata: Metadata = {
-  title: "About Me - Software Engineer with 5+ Years Experience",
+  title: "About Me - Software Engineer with 6+ Years Experience",
   description:
-    "Learn about Peace (Pease) Adeniji, a Software Engineer with 5+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
+    "Learn about Peace (Pease) Adeniji, a Software Engineer with 6+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
   keywords: [
     "About Peace Pease Adeniji",
     "Pease Adeniji",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Peace (Pease) Adeniji - Software Engineer",
     description:
-      "Discover Peace (Pease) Adeniji's journey as a Software Engineer. 5+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
+      "Discover Peace (Pease) Adeniji's journey as a Software Engineer. 6+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
     url: "https://peaseadeniji.com/about",
   },
   twitter: {
     title: "About Peace (Pease) Adeniji - Software Engineer",
     description:
-      "5+ years of software engineering excellence. Specialized in React, React Native, Node.js. Leading remote teams and building scalable applications worldwide.",
+      "6+ years of software engineering excellence. Specialized in React, React Native, Node.js. Leading remote teams and building scalable applications worldwide.",
   },
   alternates: {
     canonical: "/about",
@@ -70,9 +70,9 @@ const About = () => {
       </div> */}
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center pt-12 sm:pt-16">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-4xl px-4">
+        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-5xl px-4">
           {/* Newwww */}
-          <p className="uppercase text-sm xs:text-base tracking-widest text-black mb-4">
+          <p className="uppercase text-sm xs:text-base tracking-widest text-black mb-6">
             LET&#39;S BUILD SOMETHING COOL.
           </p>
 
@@ -80,7 +80,7 @@ const About = () => {
             Hi, I&#39;m{" "}
             <span className="text-accent"> Peace (Pease) Adeniji</span>
           </h1>
-          <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-2 text-black">
+          <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-3 text-black">
             Software Engineer
           </h1>
           <div className="pt-8 max-w-full">

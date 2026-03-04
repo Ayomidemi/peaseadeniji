@@ -41,7 +41,7 @@ const ResearchComingSoon = () => {
 
     const interval = setInterval(() => {
       setMatrixChars((prev) =>
-        prev.map(() => chars[Math.floor(Math.random() * chars.length)])
+        prev.map(() => chars[Math.floor(Math.random() * chars.length)]),
       );
     }, 150);
 
@@ -83,8 +83,8 @@ const ResearchComingSoon = () => {
         { length: 5 },
         (_, i) =>
           `${Date.now() + i} | Processing dataset_${Math.floor(
-            Math.random() * 1000
-          )}.csv...`
+            Math.random() * 1000,
+          )}.csv...`,
       );
       setStreamData(newData);
     };

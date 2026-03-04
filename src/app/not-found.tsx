@@ -41,7 +41,7 @@ const NotFound = () => {
           .map((char) =>
             Math.random() < 0.3
               ? glitchChars[Math.floor(Math.random() * glitchChars.length)]
-              : char
+              : char,
           )
           .join("");
         setGlitchText(glitchedText);
@@ -92,9 +92,7 @@ const NotFound = () => {
           className="mb-8"
         >
           <div className="relative">
-            <motion.h1
-              className="text-7xl md:text-8xl font-extrabold text-accent font-mono"
-            >
+            <motion.h1 className="text-7xl md:text-8xl font-extrabold text-accent font-mono">
               {glitchText}
             </motion.h1>
             <motion.div
@@ -114,13 +112,11 @@ const NotFound = () => {
           className="mb-12"
         >
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
-            This page wandered off{" "}
-            <span className="text-accent">the path</span>
+            This page wandered off <span className="text-accent">the path</span>
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed">
-            Looks like this page got a little lost. Don&apos;t worry, it
-            happens to the best explorers—let&apos;s gently guide you back
-            home.
+            Looks like this page got a little lost. Don&apos;t worry, it happens
+            to the best explorers—let&apos;s gently guide you back home.
           </p>
         </motion.div>
 

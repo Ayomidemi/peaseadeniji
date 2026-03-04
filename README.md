@@ -1,6 +1,6 @@
 # Peace (Pease) Adeniji - Software Engineer
 
-A modern, responsive portfolio showcasing 5+ years of software engineering experience, built with Next.js 13+ and optimized for SEO.
+A modern, responsive portfolio showcasing 6+ years of software engineering experience, built with Next.js 13+ and optimized for SEO.
 
 ## 🚀 Features
 
@@ -95,7 +95,7 @@ After deployment:
 
 ## 🌟 Professional Highlights
 
-- 5+ years of software engineering experience
+- 6+ years of software engineering experience
 - MSc in Financial Engineering (WorldQuant University)
 - BSc in Computer Science (Miva Open University)
 - Proven track record with quantifiable achievements:

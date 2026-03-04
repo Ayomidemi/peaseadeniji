@@ -7,7 +7,7 @@ Location: Lagos, Nigeria
 Email: adenijiayomide13@gmail.com
 
 ## Professional Background
-- 5+ years of experience in software engineering
+- 6+ years of experience in software engineering
 - Master of Science in Financial Engineering from WorldQuant University
 - Bachelor of Science in Computer Science from Miva Open University
 - Specialized in full-stack development, mobile applications, and quantitative finance

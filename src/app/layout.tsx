@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/next";
 import FireFliesBackground from "@/components/FireFliesBackground";
 import Sound from "@/components/Sound";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
       "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
   },
   description:
-    "Results-driven Software Engineer and Quantitative Developer with 5+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University. Expert in React, React Native, Node.js, Python, C++, and quantitative finance. Proven track record in leading remote engineering teams, optimizing systems, and delivering clean, maintainable code.",
+    "Results-driven Software Engineer and Quantitative Developer with 6+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University. Expert in React, React Native, Node.js, Python, C++, and quantitative finance. Proven track record in leading remote engineering teams, optimizing systems, and delivering clean, maintainable code.",
   keywords: [
     "Peace Adeniji",
     "Pease Adeniji",
@@ -94,7 +95,7 @@ export const metadata: Metadata = {
     url: "https://peaseadeniji.com",
     title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
     description:
-      "Software Engineer & Quantitative Developer with 5+ years experience in React, React Native, Node.js, Python, C++. MSc Financial Engineering. Available for remote opportunities worldwide.",
+      "Software Engineer & Quantitative Developer with 6+ years experience in React, React Native, Node.js, Python, C++. MSc Financial Engineering. Available for remote opportunities worldwide.",
     siteName: "Peace (Pease) Adeniji",
     images: [
       {
@@ -109,7 +110,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
     description:
-      "Software Engineer & Quantitative Developer specializing in React, React Native, Node.js, Python, C++. MSc Financial Engineering. 5+ years experience building scalable applications.",
+      "Software Engineer & Quantitative Developer specializing in React, React Native, Node.js, Python, C++. MSc Financial Engineering. 6+ years experience building scalable applications.",
     creator: "@pease_js",
     images: ["/og-image.jpg"], // Same image as OpenGraph
   },
@@ -216,7 +217,7 @@ export default function RootLayout({
           name="expertise"
           content="React, React Native, Node.js, Python, C++, Financial Engineering, Quantitative Finance"
         />
-        <meta name="experience_years" content="5+" />
+        <meta name="experience_years" content="6+" />
         <meta
           name="availability"
           content="Available for remote opportunities"
@@ -265,7 +266,7 @@ export default function RootLayout({
                   "React Native Developer",
                 ],
                 description:
-                  "Results-driven Software Engineer and Quantitative Developer with 5+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University.",
+                  "Results-driven Software Engineer and Quantitative Developer with 6+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University.",
                 worksFor: {
                   "@type": "Organization",
                   name: "Available for Remote Opportunities",
@@ -394,7 +395,7 @@ export default function RootLayout({
                 award: [
                   "MSc Financial Engineering Graduate",
                   "Computer Science Graduate",
-                  "5+ Years Software Development Experience",
+                  "6+ Years Software Development Experience",
                 ],
                 hasCredential: [
                   {
@@ -511,8 +512,8 @@ export default function RootLayout({
       </head>
       <body
         className={clsx(
-          inter.variable,
-          "bg-background text-foreground font-inter"
+          poppins.variable,
+          "bg-background text-foreground font-sans"
         )}
       >
         {children}
