@@ -36,6 +36,9 @@ const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
   project,
   category,
 }) => {
+  const isAppStoreLink = project.demoLink.includes("apps.apple.com");
+  const isPlayStoreLink = project.githubLink.includes("play.google.com");
+
   return (
     <div className="group relative bg-background/50 backdrop-blur-sm rounded-xl overflow-hidden border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10">
       {/* Project Image */}
@@ -132,7 +135,7 @@ const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
             rel="noopener noreferrer"
             className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-background font-medium rounded-lg hover:bg-accent/90 transition-colors text-sm"
           >
-            View Live
+            {isAppStoreLink ? "App Store" : "View Live"}
             <svg
               className="w-4 h-4 ml-2"
               fill="none"
@@ -154,7 +157,7 @@ const ProjectCard: React.FC<{ project: Project; category: Category }> = ({
               rel="noopener noreferrer"
               className="px-4 py-2 border border-accent text-accent font-medium rounded-lg hover:bg-accent/10 transition-colors text-sm"
             >
-              Code
+              {isPlayStoreLink ? "Google Play" : "Code"}
             </a>
           )}
         </div>

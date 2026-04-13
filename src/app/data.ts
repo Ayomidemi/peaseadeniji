@@ -459,6 +459,34 @@ export const projectsData = [
     status: "Live",
     image: "/projects/amarta-experience.png",
   },
+  {
+    id: 15,
+    name: "Ghecs",
+    description:
+      "All-in-one booking platform for short-let stays, hotels, event centers, and car rentals across Nigeria.",
+    longDescription:
+      "GHECS is a mobile booking app designed to simplify travel and lifestyle logistics across Nigeria. Users can discover and book verified short-let apartments, hotels, event venues, and car rentals from one platform, with transparent pricing and secure in-app payments.",
+    date: "2026-03-12",
+    demoLink: "https://apps.apple.com/us/app/ghecs/id6757534657",
+    githubLink: "https://play.google.com/store/apps/details?id=com.ghecs",
+    category: "mobile",
+    technologies: [
+      "React Native",
+      "Mobile Booking Platform",
+      "In-App Payments",
+      "Location-Based Services",
+      "Travel & Hospitality",
+    ],
+    features: [
+      "Short-let apartment and hotel booking",
+      "Event center reservations",
+      "Car rental across major Nigerian cities",
+      "Transparent pricing and secure checkout",
+    ],
+    featured: true,
+    status: "Live",
+    image: "/projects/ghecs.png",
+  },
 ];
 
 export const BtnList = [
