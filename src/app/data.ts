@@ -350,8 +350,8 @@ export const projectsData = [
     longDescription:
       "MyItura is a comprehensive healthcare platform that makes managing health simple and stress-free. Features include 24/7 doctor consultations via chat/video, AI health assistant, secure health records storage, and online lab test ordering with home-based testing services.",
     date: "2024-06-03",
-    demoLink: "https://play.google.com/store/apps/details?id=com.myitura.app",
-    githubLink: "",
+    demoLink: "https://apps.apple.com/us/app/myitura/id6468238519",
+    githubLink: "https://play.google.com/store/apps/details?id=com.myitura.app",
     category: "mobile",
     technologies: [
       "React Native",
