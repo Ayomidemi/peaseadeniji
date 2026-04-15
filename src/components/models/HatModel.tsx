@@ -8,7 +8,7 @@ import React, { useRef } from "react";
 type Props = {};
 
 const HatModel = (props: Props) => {
-  // Use React.memo for performance optimization
+  //This is the hat model
   const { nodes, materials } = useGLTF("/models/hat-transformed.glb");
 
   const modelRef: any = useRef();
