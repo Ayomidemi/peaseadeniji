@@ -8,7 +8,7 @@ import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-// Use React.memo for performance optimization
+// This is the staff model
 const Staff = React.memo(function Staff(props) {
   const { nodes, materials } = useGLTF("/models/staff-transformed.glb");
   const modelRef: any = useRef();
