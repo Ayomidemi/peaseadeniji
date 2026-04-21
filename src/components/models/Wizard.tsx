@@ -8,6 +8,7 @@ import { useFrame } from "@react-three/fiber";
 type Props = {};
 
 const Wizard = (props: Props) => {
+  // this is the wizard model
   const { nodes, materials } = useGLTF("/models/wizard-transformed.glb");
 
   const modelRef: any = useRef();
