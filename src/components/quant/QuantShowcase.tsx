@@ -46,9 +46,9 @@ const QuantShowcase = () => {
           className="h-1 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto max-w-md mb-6"
         />
         <p className="text-lg md:text-xl text-muted max-w-3xl mx-auto leading-relaxed">
-          Technical notebooks on stochastic modeling and derivatives pricing —
-          from Heston calibration and regime allocation to binomial trees, jump
-          diffusion, and American option pricing.
+          Technical notebooks across quantitative finance and machine learning —
+          models, data, simulation, and the methods behind them, explained step
+          by step.
         </p>
       </motion.div>
 
