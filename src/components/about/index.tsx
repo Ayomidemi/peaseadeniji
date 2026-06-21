@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ItemLayout from "./ItemLayout";
-// import Link from "next/link";
+import GitHubStatsCard from "./GitHubStatsCard";
 
 const AboutDetails = () => {
   return (
@@ -54,14 +53,7 @@ const AboutDetails = () => {
               "col-span-full xs:col-span-6 lg:col-span-4 text-accent overflow-hidden"
             }
           >
-            <div className="w-full flex items-center justify-center">
-              <img
-                className="w-full max-w-none scale-110 origin-center"
-                src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=567CE4&text_color=1B202D&icon_color=567CE4&text_bold=true`}
-                alt="GitHub stats for Pease Adeniji"
-                loading="lazy"
-              />
-            </div>
+            <GitHubStatsCard />
           </ItemLayout>
 
           {/* Education Section */}
