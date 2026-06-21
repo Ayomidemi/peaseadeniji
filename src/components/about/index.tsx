@@ -17,13 +17,13 @@ const AboutDetails = () => {
               Professional Summary
             </h2>
             <p className="font-light  text-sm sm:text-sm md:text-base">
-              Results-driven Software Engineer and Quantitative Developer with
-              {' '}{new Date().getFullYear() - 2020}+ years of experience building scalable, high-performance web and
-              mobile applications. MSc in Financial Engineering from WorldQuant
-              University. Expert in React, React Native, Node.js, Next.js,
-              Python, C++, and quantitative finance. Proven track record in
-              leading remote engineering teams, optimizing systems, and
-              delivering clean, maintainable code.
+              Results-driven Software Engineer and Quantitative Developer with{" "}
+              {new Date().getFullYear() - 2020}+ years of experience building
+              scalable, high-performance web and mobile applications. MSc in
+              Financial Engineering from WorldQuant University. Expert in React,
+              React Native, Node.js, Next.js, Python, C++, and quantitative
+              finance. Proven track record in leading remote engineering teams,
+              optimizing systems, and delivering clean, maintainable code.
             </p>
 
             <p className="font-light text-sm sm:text-sm md:text-base">
@@ -44,20 +44,24 @@ const AboutDetails = () => {
             className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
           >
             <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            {new Date().getFullYear() - 2020}+{" "}
+              {new Date().getFullYear() - 2020}+{" "}
               <sub className="font-semibold text-base">years of experience</sub>
             </p>
           </ItemLayout>
 
           <ItemLayout
-            className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+            className={
+              "col-span-full xs:col-span-6 lg:col-span-4 text-accent overflow-hidden"
+            }
           >
-            <img
-              className="w-full h-full"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=567CE4&text_color=FFFFFF&icon_color=567CE4&text_bold=false`}
-              alt="Pease Adeniji"
-              loading="lazy"
-            />
+            <div className="w-full flex items-center justify-center">
+              <img
+                className="w-full max-w-none scale-110 origin-center"
+                src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=ayomidemi&hide=contribs&theme=transparent&hide_border=true&title_color=567CE4&text_color=1B202D&icon_color=567CE4&text_bold=true`}
+                alt="GitHub stats for Pease Adeniji"
+                loading="lazy"
+              />
+            </div>
           </ItemLayout>
 
           {/* Education Section */}
