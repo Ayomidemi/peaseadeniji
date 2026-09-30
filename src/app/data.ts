@@ -66,6 +66,35 @@ export const projectCategories = [
 
 export const projectsData = [
   {
+    id: 16,
+    name: "FigureFlow",
+    description:
+      "AI-native finance platform that automates reconciliation, reporting, and decision-ready insights",
+    longDescription:
+      "FigureFlow is an AI-native financial intelligence platform for CFOs, accountants, and finance teams. It automates finance operations from reconciliation to reporting with workflows and agents, insights and alerts, natural-language AI query, and decision-ready dashboards so teams spend time on decisions, not data.",
+    date: "2026-09-30",
+    demoLink: "https://figureflow.app/",
+    githubLink: "",
+    category: "fintech",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "AI Agents",
+      "Financial Data Pipelines",
+      "Reporting Automation",
+    ],
+    features: [
+      "Automated reconciliation workflows",
+      "AI query over financial data",
+      "Insights and alerts",
+      "Automated reporting",
+    ],
+    featured: true,
+    status: "Live",
+    image: "/projects/figureflow.png",
+  },
+  {
     id: 1,
     name: "EasyShare Global",
     description:
