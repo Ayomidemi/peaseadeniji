@@ -3,12 +3,22 @@ export interface QuantProject {
   slug: string;
   title: string;
   description: string;
-  category: "Stochastic Modeling" | "Financial Derivatives Pricing";
+  category:
+    | "Stochastic Modeling"
+    | "Financial Derivatives Pricing"
+    | "Deep Learning for Finance";
   topics: string[];
   htmlPath: string;
 }
 
 export const quantCategories = [
+  {
+    id: "deep-learning",
+    name: "Deep Learning for Finance",
+    description:
+      "Neural forecasting, representation learning, walk-forward validation, and allocation backtests.",
+    icon: "🧠",
+  },
   {
     id: "stochastic-modeling",
     name: "Stochastic Modeling",
@@ -26,6 +36,31 @@ export const quantCategories = [
 ] as const;
 
 export const quantProjects: QuantProject[] = [
+  {
+    id: "dl-gwp1",
+    slug: "dl-gwp1",
+    title: "Multi-Asset ETF Forecasting with Deep Learning",
+    description:
+      "Compare MLP, CNN–GAF, and LSTM models for 25-day ETF return forecasts across SPY, TLT, SHY, GLD, and DBO, then backtest a multi-output allocation strategy.",
+    category: "Deep Learning for Finance",
+    topics: ["MLP", "CNN-GAF", "LSTM", "ETF Allocation"],
+    htmlPath: "/quant/deep-learning/dl-gwp1/dl-gwp1.html",
+  },
+  {
+    id: "dl-gwp2",
+    slug: "dl-gwp2",
+    title: "Validation Design for Deep Learning Trading Strategies",
+    description:
+      "Study how chronological splits, walk-forward validation, and label purging change apparent performance for MLP, LSTM, and CNN-GAF models on Bitcoin returns.",
+    category: "Deep Learning for Finance",
+    topics: [
+      "Walk-Forward Validation",
+      "Label Purging",
+      "Bitcoin",
+      "CNN-GAF",
+    ],
+    htmlPath: "/quant/deep-learning/dl-gwp2/dl-gwp2.html",
+  },
   {
     id: "sm-gwp1",
     slug: "sm-gwp1",
