@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 interface Project {
@@ -37,6 +37,8 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
   categories,
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const filteredProjects =
     activeCategory === "all"
@@ -50,11 +52,107 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
   const categoryName = (id: string) =>
     categories.find((category) => category.id === id)?.name ?? id;
 
+  const activeLabel =
+    activeCategory === "all" ? "All" : categoryName(activeCategory);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const close = (event: PointerEvent) => {
+      if (!menuRef.current?.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+
+    document.addEventListener("pointerdown", close);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", close);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [menuOpen]);
+
+  const chooseCategory = (id: string) => {
+    setActiveCategory(id);
+    setMenuOpen(false);
+  };
+
   return (
     <div>
+      <div className="relative mb-10 flex justify-end md:hidden" ref={menuRef}>
+        <button
+          type="button"
+          aria-expanded={menuOpen}
+          aria-haspopup="listbox"
+          onClick={() => setMenuOpen((open) => !open)}
+          className="inline-flex items-center gap-3 border border-blush bg-background px-4 py-2.5 text-sm text-foreground"
+        >
+          {activeLabel}
+          <svg
+            className={`h-3 w-3 text-accent transition-transform ${
+              menuOpen ? "rotate-180" : ""
+            }`}
+            viewBox="0 0 12 12"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 4.5 6 8.5 10 4.5"
+              stroke="currentColor"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
+        {menuOpen ? (
+          <ul
+            role="listbox"
+            className="absolute right-0 top-full z-20 mt-2 min-w-[15rem] border border-blush bg-background py-1"
+          >
+            <li>
+              <button
+                type="button"
+                role="option"
+                aria-selected={activeCategory === "all"}
+                onClick={() => chooseCategory("all")}
+                className={`block w-full px-4 py-2.5 text-left text-sm ${
+                  activeCategory === "all"
+                    ? "bg-blush/40 text-foreground"
+                    : "text-muted hover:bg-blush/20 hover:text-foreground"
+                }`}
+              >
+                All
+              </button>
+            </li>
+            {visibleCategories.map((category) => (
+              <li key={category.id}>
+                <button
+                  type="button"
+                  role="option"
+                  aria-selected={activeCategory === category.id}
+                  onClick={() => chooseCategory(category.id)}
+                  className={`block w-full px-4 py-2.5 text-left text-sm ${
+                    activeCategory === category.id
+                      ? "bg-blush/40 text-foreground"
+                      : "text-muted hover:bg-blush/20 hover:text-foreground"
+                  }`}
+                >
+                  {category.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        ) : null}
+      </div>
+
       <div className="mb-12 hidden flex-wrap gap-x-6 gap-y-3 border-b border-blush pb-4 md:flex">
         <button
-          onClick={() => setActiveCategory("all")}
+          onClick={() => chooseCategory("all")}
           className={`text-sm ${
             activeCategory === "all"
               ? "text-foreground underline decoration-blush decoration-2 underline-offset-8"
@@ -66,7 +164,7 @@ const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({
         {visibleCategories.map((category) => (
           <button
             key={category.id}
-            onClick={() => setActiveCategory(category.id)}
+            onClick={() => chooseCategory(category.id)}
             className={`text-sm ${
               activeCategory === category.id
                 ? "text-foreground underline decoration-blush decoration-2 underline-offset-8"
