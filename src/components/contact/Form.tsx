@@ -3,24 +3,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Toaster, toast } from "sonner";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-      delayChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { scale: 0 },
-  show: { scale: 1 },
-};
+const fieldClass =
+  "w-full border border-blush bg-background px-3 py-3 text-sm text-foreground outline-none placeholder:text-muted focus:border-accent";
 
 export default function Form() {
   const {
@@ -31,7 +17,7 @@ export default function Form() {
   } = useForm();
 
   const sendEmail = (params: Record<string, unknown> | undefined) => {
-    const toastId = toast.loading("Sending your message, please wait...");
+    const toastId = toast.loading("Sending your message…");
 
     emailjs
       .send(
@@ -47,110 +33,124 @@ export default function Form() {
       )
       .then(
         () => {
-          toast.success(
-            "I have received your message, I will get back to you soon!",
-            {
-              id: toastId,
-            }
-          );
-          reset(); // Clear the form after successful submission
+          toast.success("Message received. I will reply soon.", {
+            id: toastId,
+          });
+          reset();
         },
-        (error) => {
-          //   console.log("FAILED...", error.text);
-          toast.error(
-            "There was an error sending your message, please try again later!",
-            {
-              id: toastId,
-            }
-          );
+        () => {
+          toast.error("The message did not send. Please try again.", {
+            id: toastId,
+          });
         }
       );
   };
 
-  const onSubmit = (data: any) => {
-    const templateParams = {
+  const onSubmit = (data: Record<string, string>) => {
+    sendEmail({
       to_name: "Peace Adeniji",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
-    };
-
-    sendEmail(templateParams);
+    });
   };
 
   return (
     <>
       <Toaster richColors={true} />
 
-      <motion.form
-        variants={container}
-        initial="hidden"
-        animate="show"
+      <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col items-center justify-center space-y-4"
+        className="flex w-full flex-col space-y-4"
       >
-        <motion.input
-          variants={item}
-          type="text"
-          placeholder="Name"
-          {...register("name", {
-            required: "Humor me!",
-            minLength: {
-              value: 3,
-              message: "Name should be atleast 3 characters long.",
-            },
-          })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
-        />
-        {errors.name && (
-          <span className="inline-block self-start text-accent text-sm">
-            {(errors as any).name.message}
-          </span>
-        )}
+        <div>
+          <label
+            htmlFor="name"
+            className="mb-2 block text-xs uppercase tracking-[0.22em] text-muted"
+          >
+            Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Your name"
+            {...register("name", {
+              required: "Name is required.",
+              minLength: {
+                value: 3,
+                message: "Name should be at least 3 characters.",
+              },
+            })}
+            className={fieldClass}
+          />
+          {errors.name && (
+            <span className="mt-2 block text-sm text-accent">
+              {String(errors.name.message)}
+            </span>
+          )}
+        </div>
 
-        <motion.input
-          variants={item}
-          type="email"
-          placeholder="Email"
-          {...register("email", {
-            required: "Humor me!",
-            pattern: /^\S+@\S+$/i,
-          })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
-        />
-        {errors.email && (
-          <span className="inline-block self-start text-accent text-sm">
-            {(errors as any).email.message}
-          </span>
-        )}
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-2 block text-xs uppercase tracking-[0.22em] text-muted"
+          >
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            placeholder="you@email.com"
+            {...register("email", {
+              required: "Email is required.",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Enter a valid email.",
+              },
+            })}
+            className={fieldClass}
+          />
+          {errors.email && (
+            <span className="mt-2 block text-sm text-accent">
+              {String(errors.email.message)}
+            </span>
+          )}
+        </div>
 
-        <motion.textarea
-          variants={item}
-          placeholder="Message"
-          {...register("message", {
-            required: "Humor me!",
-            maxLength: {
-              value: 500,
-              message: "Message should be less than 500 characters",
-            },
-          })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
-        />
-        {errors.message && (
-          <span className="inline-block self-start text-accent text-sm">
-            {(errors as any).message.message}
-          </span>
-        )}
+        <div>
+          <label
+            htmlFor="message"
+            className="mb-2 block text-xs uppercase tracking-[0.22em] text-muted"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            rows={6}
+            placeholder="What would you like to talk about?"
+            {...register("message", {
+              required: "Message is required.",
+              maxLength: {
+                value: 500,
+                message: "Message should be less than 500 characters.",
+              },
+            })}
+            className={fieldClass}
+          />
+          {errors.message && (
+            <span className="mt-2 block text-sm text-accent">
+              {String(errors.message.message)}
+            </span>
+          )}
+        </div>
 
-        <motion.input
-          variants={item}
-          value="Cast your message!"
-          className="px-10 py-3 rounded-full shadow-md bg-accent text-background border border-accent/70 border-solid
-      hover:bg-accent/95 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize tracking-wide transition-all
-      "
+        <button
           type="submit"
-        />
-      </motion.form>
+          className="w-fit cursor-pointer bg-blush px-8 py-3 text-sm text-foreground transition-colors hover:bg-accent hover:text-background"
+        >
+          Send
+        </button>
+      </form>
     </>
   );
 }

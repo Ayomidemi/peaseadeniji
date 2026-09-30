@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/next";
 import FireFliesBackground from "@/components/FireFliesBackground";
 import Sound from "@/components/Sound";
 
-const poppins = Poppins({
+const sans = Inter({
   subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sans",
+});
+
+const serif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
@@ -512,7 +517,8 @@ export default function RootLayout({
       </head>
       <body
         className={clsx(
-          poppins.variable,
+          sans.variable,
+          serif.variable,
           "bg-background text-foreground font-sans"
         )}
       >

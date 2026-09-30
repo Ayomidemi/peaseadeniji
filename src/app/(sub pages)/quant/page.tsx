@@ -1,10 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
-import Image from "next/image";
 import QuantShowcase from "@/components/quant/QuantShowcase";
 import Navbar from "@/components/Navbar";
-
-import bg from "../../../../public/background/Pease.png";
 
 export const metadata: Metadata = {
   title: "Quant Work - Stochastic Modeling & Derivatives Pricing",
@@ -43,15 +40,7 @@ const Quant = () => {
   return (
     <>
       <Navbar />
-      <Image
-        src={bg}
-        priority
-        sizes="100vw"
-        alt="Peace (Pease) Adeniji Quant Work"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.04]"
-      />
-
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-0 sm:pt-16">
+      <div className="mx-auto max-w-5xl px-6 pb-24 pt-28 sm:px-8 sm:pt-36">
         <QuantShowcase />
       </div>
     </>

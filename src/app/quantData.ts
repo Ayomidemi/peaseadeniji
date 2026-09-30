@@ -44,7 +44,7 @@ export const quantProjects: QuantProject[] = [
       "Compare MLP, CNN–GAF, and LSTM models for 25-day ETF return forecasts across SPY, TLT, SHY, GLD, and DBO, then backtest a multi-output allocation strategy.",
     category: "Deep Learning for Finance",
     topics: ["MLP", "CNN-GAF", "LSTM", "ETF Allocation"],
-    htmlPath: "/quant/deep-learning/dl-gwp1/dl-gwp1.html",
+    htmlPath: "/notebooks/deep-learning/dl-gwp1/dl-gwp1.html",
   },
   {
     id: "dl-gwp2",
@@ -59,7 +59,7 @@ export const quantProjects: QuantProject[] = [
       "Bitcoin",
       "CNN-GAF",
     ],
-    htmlPath: "/quant/deep-learning/dl-gwp2/dl-gwp2.html",
+    htmlPath: "/notebooks/deep-learning/dl-gwp2/dl-gwp2.html",
   },
   {
     id: "sm-gwp1",
@@ -69,7 +69,7 @@ export const quantProjects: QuantProject[] = [
       "Calibrate the Heston model to 15-day SM Energy options using Lewis and Carr-Madan Fourier methods, then price a 20-day ATM Asian call with Monte Carlo.",
     category: "Stochastic Modeling",
     topics: ["Heston Model", "Fourier Pricing", "Monte Carlo", "Asian Options"],
-    htmlPath: "/quant/stochastic-modeling/sm-gwp1/sm-gwp1.html",
+    htmlPath: "/notebooks/stochastic-modeling/sm-gwp1/sm-gwp1.html",
   },
   {
     id: "sm-gwp2",
@@ -79,7 +79,7 @@ export const quantProjects: QuantProject[] = [
       "Build a clean dataset for a VIX-regime rotation strategy across TLT, GLD, and SPY with aligned returns, volatility changes, and exploratory analysis.",
     category: "Stochastic Modeling",
     topics: ["Regime Allocation", "VIX", "ETF Returns", "Data Pipeline"],
-    htmlPath: "/quant/stochastic-modeling/sm-gwp2/sm-gwp2.html",
+    htmlPath: "/notebooks/stochastic-modeling/sm-gwp2/sm-gwp2.html",
   },
   {
     id: "fdp-gwp1",
@@ -89,7 +89,7 @@ export const quantProjects: QuantProject[] = [
       "Apply put-call parity and binomial tree methods to price European calls and puts, estimate delta, and analyze convergence toward Black-Scholes values.",
     category: "Financial Derivatives Pricing",
     topics: ["Binomial Trees", "Put-Call Parity", "Delta", "European Options"],
-    htmlPath: "/quant/derivatives-pricing/fdp-gwp1/fdp-gwp1.html",
+    htmlPath: "/notebooks/derivatives-pricing/fdp-gwp1/fdp-gwp1.html",
   },
   {
     id: "fdp-gwp2",
@@ -104,7 +104,7 @@ export const quantProjects: QuantProject[] = [
       "LSMC",
       "Greeks",
     ],
-    htmlPath: "/quant/derivatives-pricing/fdp-gwp2/fdp-gwp2.html",
+    htmlPath: "/notebooks/derivatives-pricing/fdp-gwp2/fdp-gwp2.html",
   },
 ];
 

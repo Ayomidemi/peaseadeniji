@@ -1,10 +1,5 @@
 import React from "react";
 import type { Metadata } from "next";
-import Image from "next/image";
-// import dynamic from "next/dynamic";
-
-import bg from "../../../../public/background/Pease.png";
-// import RenderModel from "@/components/RenderModel";
 import AboutDetails from "@/components/about";
 import Navbar from "@/components/Navbar";
 
@@ -69,66 +64,15 @@ const About = () => {
         </RenderModel>
       </div> */}
 
-      <div className="relative w-full h-screen flex flex-col items-center justify-center pt-12 sm:pt-16">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 w-full max-w-5xl px-4">
-          {/* Newwww */}
-          <p className="uppercase text-sm xs:text-base tracking-widest text-black mb-6">
-            LET&#39;S BUILD SOMETHING COOL.
-          </p>
-
-          <h1 className="font-bold text-4xl lg:text-6xl text-foreground">
-            Hi, I&#39;m{" "}
-            <span className="text-accent"> Peace (Pease) Adeniji</span>
-          </h1>
-          <h1 className="font-bold text-base xs:text-2xl sm:text-3xl lg:text-4xl mt-3 text-black">
-            A Software Engineer
-          </h1>
-          <div className="pt-8 max-w-full">
-            <div className="bg-background rounded-lg p-6 font-mono text-left border border-accent/30 shadow-sm">
-              <div className="text-foreground mb-2">
-                <span className="text-accent">const</span>{" "}
-                <span className="text-foreground">Pease</span> = &#123;
-              </div>
-              <div className="ml-4 space-y-1 text-sm">
-                <div>
-                  <span className="text-accent">expertise</span>:{" "}
-                  <span className="text-black">
-                    &quot;Building scalable apps that impact thousands&quot;
-                  </span>
-                  ,
-                </div>
-                <div>
-                  <span className="text-accent">techStack</span>: [
-                  <span className="text-black">&quot;React&quot;</span>,{" "}
-                  <span className="text-black">&quot;Node.js&quot;</span>,{" "}
-                  <span className="text-black">&quot;Python&quot;</span>,{" "}
-                  <span className="text-black">&quot;C++&quot;</span>],
-                </div>
-                <div>
-                  <span className="text-accent">passion</span>:{" "}
-                  <span className="text-black">
-                    &quot;Fintech &amp; Social Impact&quot;
-                  </span>
-                  ,
-                </div>
-                <div>
-                  <span className="text-accent">collaborate</span>:{" "}
-                  <span className="text-foreground">()</span>{" "}
-                  <span className="text-accent">=&gt;</span> &#123;
-                  <div className="ml-4">
-                    <span className="text-accent">return</span>{" "}
-                    <span className="text-black">
-                      &quot;Let&apos;s build something amazing&quot;
-                    </span>
-                    ;
-                  </div>
-                  &#125;
-                </div>
-              </div>
-              <div className="text-black mt-2">&#125;;</div>
-            </div>
-          </div>
-        </div>
+      <div className="relative mx-auto w-full max-w-5xl px-6 pb-8 pt-28 sm:px-8 sm:pt-36">
+        <p className="text-xs uppercase tracking-[0.22em] text-muted">About</p>
+        <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[1.05] text-foreground sm:text-6xl">
+          Peace Adeniji
+        </h1>
+        <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted sm:text-[15px]">
+          Software engineer and quantitative developer. I build products people
+          use, then the models that explain the numbers underneath.
+        </p>
       </div>
 
       <AboutDetails />

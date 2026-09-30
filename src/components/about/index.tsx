@@ -1,143 +1,58 @@
 import React from "react";
-import ItemLayout from "./ItemLayout";
-import GitHubStatsCard from "./GitHubStatsCard";
+import Link from "next/link";
 
 const AboutDetails = () => {
+  const years = new Date().getFullYear() - 2020;
+
   return (
-    <section className="py-20 w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
-          <ItemLayout
-            className={
-              "col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-            }
-          >
-            <h2 className="text-xl md:text-2xl text-left w-full capitalize">
-              Professional Summary
-            </h2>
-            <p className="font-light  text-sm sm:text-sm md:text-base">
-              Results-driven Software Engineer and Quantitative Developer with{" "}
-              {new Date().getFullYear() - 2020}+ years of experience building
-              scalable, high-performance web and mobile applications. MSc in
-              Financial Engineering from WorldQuant University. Expert in React,
-              React Native, Node.js, Next.js, Python, C++, and quantitative
-              finance. Proven track record in leading remote engineering teams,
-              optimizing systems, and delivering clean, maintainable code.
-            </p>
+    <section className="mx-auto w-full max-w-5xl px-6 pb-24 sm:px-8">
+      <div className="max-w-2xl space-y-6 border-t border-blush pt-10 text-sm leading-relaxed text-muted">
+        <p>
+          Software engineer and quantitative developer with {years}+ years
+          building web and mobile products. MSc in Financial Engineering from
+          WorldQuant University. I work in React, React Native, Node.js,
+          Next.js, Python, and C++.
+        </p>
+        <p>
+          Most of the work is fintech and social impact: products people
+          actually open, then the models underneath. I have led remote teams,
+          taken apps into four languages, and cut frontend load time by about
+          35%.
+        </p>
+      </div>
 
-            <p className="font-light text-sm sm:text-sm md:text-base">
-              <span className="font-semibold text-sm sm:text-sm md:text-base text-left mb-2 block w-full">
-                Core Expertise & Quantitative Skills
-              </span>
-              Specialized in full-stack development (React, Node.js), mobile
-              applications (React Native, Flutter), and quantitative finance
-              (Python, C++, mathematical modeling). Passionate about bridging
-              technology and finance, contributing to mission-driven
-              organizations, mentoring engineers, and driving impactful software
-              solutions. Led internationalization efforts expanding apps to 4+
-              languages and improved frontend performance by 35%.
-            </p>
-          </ItemLayout>
-
-          <ItemLayout
-            className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
-          >
-            <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-              {new Date().getFullYear() - 2020}+{" "}
-              <sub className="font-semibold text-base">years of experience</sub>
-            </p>
-          </ItemLayout>
-
-          <ItemLayout
-            className={
-              "col-span-full xs:col-span-6 lg:col-span-4 text-accent overflow-hidden"
-            }
-          >
-            <GitHubStatsCard />
-          </ItemLayout>
-
-          {/* Education Section */}
-          <ItemLayout
-            className={"col-span-full md:col-span-6 flex-col items-start"}
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Education
-            </h3>
-            <div className="space-y-3 w-full">
-              <div className="border-l-2 border-accent/30 pl-4">
-                <h4 className="text-sm font-semibold text-accent">
-                  Master of Science (MSc) in Financial Engineering
-                </h4>
-                <p className="text-sm text-foreground/80">
-                  WorldQuant University
-                </p>
-                <p className="text-sm text-muted">2027</p>
-                <p className="text-sm text-muted mt-1">
-                  Quantitative Finance • Risk Management • Portfolio
-                  Optimization
-                </p>
-              </div>
-              <div className="border-l-2 border-accent/30 pl-4">
-                <h4 className="text-sm font-semibold text-accent">
-                  Bachelor of Science (BSc) in Computer Science
-                </h4>
-                <p className="text-sm text-foreground/80">
-                  Miva Open University
-                </p>
-                <p className="text-sm text-muted">2026</p>
-                <p className="text-sm text-muted mt-1">
-                  Software Engineering • Data Structures • Algorithms
-                </p>
-              </div>
+      <div className="mt-16 grid gap-12 border-t border-blush pt-10 md:grid-cols-2">
+        <div>
+          <h2 className="font-serif text-3xl text-foreground">Education</h2>
+          <div className="mt-6 space-y-6 text-sm">
+            <div>
+              <p className="text-foreground">
+                MSc, Financial Engineering
+              </p>
+              <p className="mt-1 text-muted">WorldQuant University · 2027</p>
             </div>
-          </ItemLayout>
-
-          {/* Frameworks & Technologies */}
-          <ItemLayout
-            className={"col-span-full md:col-span-6 flex-col items-start"}
-          >
-            <h3 className="text-lg md:text-xl text-left w-full capitalize mb-3">
-              Frameworks & Technologies
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "JavaScript",
-                "TypeScript",
-                "Python",
-                "C++",
-                "React",
-                "React Native",
-                "Next.js",
-                "Node.js",
-                "Nest.js",
-                "Express.js",
-                "Django",
-                "Flask",
-                "PostgreSQL",
-                "MongoDB",
-                "Docker",
-                "Kubernetes",
-                "CI/CD",
-              ].map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 bg-muted/20 text-foreground rounded-full text-sm sm:text-sm"
-                >
-                  {tech}
-                </span>
-              ))}
+            <div>
+              <p className="text-foreground">BSc, Computer Science</p>
+              <p className="mt-1 text-muted">Miva Open University · 2026</p>
             </div>
-          </ItemLayout>
+          </div>
+        </div>
 
-          {/* All Skills Icons */}
-          {/* <ItemLayout className={"col-span-full"}>
-            <img
-              className="w-full h-auto"
-              src={`https://skillicons.dev/icons?i=js,ts,python,cpp,react,nodejs,nextjs,flutter,dart,swift,java,aws,azure,docker,git,github,mongodb,postgresql,firebase,tailwind,figma,vscode`}
-              alt="Pease Adeniji Technical Skills"
-              loading="lazy"
-            />
-          </ItemLayout> */}
+        <div>
+          <h2 className="font-serif text-3xl text-foreground">Tools</h2>
+          <p className="mt-6 text-sm leading-relaxed text-muted">
+            JavaScript, TypeScript, Python, C++, React, React Native, Next.js,
+            Node.js, Nest.js, Express, Django, Flask, PostgreSQL, MongoDB,
+            Docker, Kubernetes.
+          </p>
+          <Link
+            href="https://github.com/Ayomidemi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block text-sm text-foreground underline decoration-blush decoration-2 underline-offset-4 hover:decoration-accent"
+          >
+            GitHub
+          </Link>
         </div>
       </div>
     </section>

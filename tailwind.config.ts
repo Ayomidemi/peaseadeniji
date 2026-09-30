@@ -9,14 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
-        poppins: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
       },
       colors: {
         background: "rgb(var(--background))",
         foreground: "rgb(var(--foreground))",
         muted: "rgb(var(--muted))",
         accent: "rgb(var(--accent))",
+        blush: "rgb(var(--blush))",
       },
       backgroundImage: {
         "firefly-radial":

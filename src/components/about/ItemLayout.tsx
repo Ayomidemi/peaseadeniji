@@ -15,7 +15,7 @@ const ItemLayout = ({ children, className }: Props) => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className={clsx(
-        "custom-bg p-6 sm:p-8 rounded-xl flex items-center justify-center space-y-8",
+        "flex items-center justify-center space-y-6 border border-blush bg-blush/20 p-6 sm:p-8",
         className
       )}
     >

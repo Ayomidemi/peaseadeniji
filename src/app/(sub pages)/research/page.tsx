@@ -1,10 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import Image from "next/image";
-import ResearchComingSoon from "@/components/research/ResearchComingSoon";
 import Navbar from "@/components/Navbar";
-
-import bg from "../../../../public/background/Pease.png";
 
 export const metadata: Metadata = {
   title:
@@ -57,16 +53,20 @@ const Research = () => {
   return (
     <>
       <Navbar />
-      <Image
-        src={bg}
-        priority
-        sizes="100vw"
-        alt="Peace Adeniji Research"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-[0.04]"
-      />
-
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-10 sm:pt-16">
-        <ResearchComingSoon />
+      <div className="mx-auto max-w-5xl px-6 pb-24 pt-28 sm:px-8 sm:pt-36">
+        <h1 className="font-serif text-5xl text-foreground sm:text-6xl">
+          Research
+        </h1>
+        <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-[15px]">
+          Notes on quantitative finance and machine learning are collected on
+          the quant page for now.
+        </p>
+        <a
+          href="/quant"
+          className="mt-8 inline-block text-sm text-foreground underline decoration-blush decoration-2 underline-offset-4 hover:decoration-accent"
+        >
+          Read the notebooks
+        </a>
       </div>
     </>
   );

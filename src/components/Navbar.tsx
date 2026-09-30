@@ -68,17 +68,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-md border-b border-foreground/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-accent/90 rounded-xl flex items-center justify-center font-bold text-background group-hover:scale-110 group-hover:bg-accent transition-all shadow-sm">
-              P
-            </div>
-            <span className="font-semibold text-base sm:text-lg text-foreground/90 group-hover:text-accent transition-colors">
-              Pease
-            </span>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
+      <div className="mx-auto max-w-5xl px-6 sm:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <Link href="/" className="font-serif text-2xl text-foreground">
+            Pease
           </Link>
 
           {/* Desktop Navigation */}
@@ -87,10 +81,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium tracking-wide transition-colors hover:text-accent ${
-                  pathname === item.href
-                    ? "text-accent"
-                    : "text-foreground"
+                className={`text-sm transition-colors hover:text-accent ${
+                  pathname === item.href || pathname.startsWith(`${item.href}/`)
+                    ? "text-foreground underline decoration-blush decoration-2 underline-offset-8"
+                    : "text-muted"
                 }`}
               >
                 {item.name}
@@ -108,7 +102,7 @@ const Navbar = () => {
                   target: "_blank",
                   rel: "noopener noreferrer",
                 })}
-                className="w-8 h-8 rounded-full bg-foreground/5 hover:bg-accent/10 flex items-center justify-center transition-colors group shadow-sm"
+                className="flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
                 title={link.name}
               >
                 <span className="text-foreground group-hover:text-accent transition-colors">
@@ -156,7 +150,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden py-4 border-t border-accent/20"
+            className="border-t border-blush py-4 md:hidden"
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
@@ -164,8 +158,9 @@ const Navbar = () => {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
-                    pathname === item.href
+                  className={`text-sm transition-colors hover:text-accent ${
+                    pathname === item.href ||
+                    pathname.startsWith(`${item.href}/`)
                       ? "text-accent"
                       : "text-foreground"
                   }`}
@@ -175,7 +170,7 @@ const Navbar = () => {
               ))}
 
               {/* Mobile Social Links */}
-              <div className="flex items-center justify-center space-x-6 pt-4 border-t border-accent/20">
+              <div className="flex items-center justify-start space-x-4 border-t border-blush pt-4">
                 {socialLinks.map((link) => (
                   <Link
                     key={link.name}
@@ -184,7 +179,7 @@ const Navbar = () => {
                       target: "_blank",
                       rel: "noopener noreferrer",
                     })}
-                    className="w-8 h-8 rounded-full bg-muted/20 hover:bg-accent/20 flex items-center justify-center transition-colors group"
+                    className="flex h-8 w-8 items-center justify-center text-muted transition-colors hover:text-accent"
                     title={link.name}
                   >
                     <span className="text-foreground group-hover:text-accent transition-colors">
