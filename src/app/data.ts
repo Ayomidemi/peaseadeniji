@@ -537,7 +537,7 @@ export const BtnList = [
   },
   {
     label: "X",
-    link: "https://x.com/pease_js",
+    link: "https://x.com/peaseadeniji",
     icon: "twitter",
     newTab: true,
   },

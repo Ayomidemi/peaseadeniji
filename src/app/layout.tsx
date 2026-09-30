@@ -19,12 +19,11 @@ const serif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Peace (Pease) Adeniji - Software Engineer",
-    default:
-      "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
+    template: "%s · Peace Adeniji",
+    default: "Peace Adeniji · Software Engineer",
   },
   description:
-    "Results-driven Software Engineer and Quantitative Developer with 6+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University. Expert in React, React Native, Node.js, Python, C++, and quantitative finance. Proven track record in leading remote engineering teams, optimizing systems, and delivering clean, maintainable code.",
+    "Software engineer and quantitative developer in Lagos. I build fintech products and the models behind them, and I work remotely.",
   keywords: [
     "Peace Adeniji",
     "Pease Adeniji",
@@ -98,26 +97,26 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://peaseadeniji.com",
-    title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
+    title: "Peace Adeniji · Software Engineer",
     description:
-      "Software Engineer & Quantitative Developer with 6+ years experience in React, React Native, Node.js, Python, C++. MSc Financial Engineering. Available for remote opportunities worldwide.",
-    siteName: "Peace (Pease) Adeniji",
+      "Software engineer and quantitative developer in Lagos. Fintech products, and the models behind them.",
+    siteName: "Peace Adeniji",
     images: [
       {
-        url: "/og-image.jpg", // You'll need to add this image
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Peace Adeniji - Software Engineer & Quantitative Developer",
+        alt: "Peace Adeniji, software engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Peace (Pease) Adeniji - Software Engineer & Quantitative Developer",
+    title: "Peace Adeniji · Software Engineer",
     description:
-      "Software Engineer & Quantitative Developer specializing in React, React Native, Node.js, Python, C++. MSc Financial Engineering. 6+ years experience building scalable applications.",
-    creator: "@pease_js",
-    images: ["/og-image.jpg"], // Same image as OpenGraph
+      "Software engineer and quantitative developer in Lagos. Fintech products, and the models behind them.",
+    creator: "@peaseadeniji",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -132,9 +131,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
-      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
@@ -145,7 +143,7 @@ export const metadata: Metadata = {
       {
         rel: "mask-icon",
         url: "/pease.svg",
-        color: "#fefe5b",
+        color: "#ffd6e0",
       },
     ],
   },
@@ -168,8 +166,8 @@ export default function RootLayout({
         {/* Additional SEO meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Match warm light background */}
-        <meta name="theme-color" content="#f5f2ec" />
-        <meta name="color-scheme" content="dark light" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="color-scheme" content="light" />
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
@@ -201,7 +199,7 @@ export default function RootLayout({
         {/* Entity and Knowledge Graph hints for AI */}
         <meta property="profile:first_name" content="Peace" />
         <meta property="profile:last_name" content="Adeniji" />
-        <meta property="profile:username" content="pease_js" />
+        <meta property="profile:username" content="peaseadeniji" />
         <meta property="profile:gender" content="female" />
         <meta property="article:author" content="Peace Adeniji" />
         <meta
@@ -260,8 +258,7 @@ export default function RootLayout({
                 sameAs: [
                   "https://www.linkedin.com/in/peaceadeniji",
                   "https://github.com/Ayomidemi",
-                  "https://x.com/pease_js",
-                  "https://twitter.com/pease_js",
+                  "https://x.com/peaseadeniji",
                 ],
                 jobTitle: [
                   "Senior Software Engineer",
@@ -271,12 +268,7 @@ export default function RootLayout({
                   "React Native Developer",
                 ],
                 description:
-                  "Results-driven Software Engineer and Quantitative Developer with 6+ years of experience building scalable, high-performance web and mobile applications. MSc in Financial Engineering from WorldQuant University.",
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Available for Remote Opportunities",
-                  description: "Freelance Software Engineer & Consultant",
-                },
+                  "Software engineer and quantitative developer in Lagos. Builds fintech products and the models behind them, and works remotely.",
                 hasOccupation: [
                   {
                     "@type": "Occupation",
@@ -371,7 +363,6 @@ export default function RootLayout({
                   postalCode: "100001",
                 },
                 email: "adenijiayomide13@gmail.com",
-                telephone: "+234-XXX-XXX-XXXX",
                 nationality: "Nigerian",
                 alumniOf: [
                   {
@@ -387,7 +378,7 @@ export default function RootLayout({
                     name: "Miva Open University",
                     description: "Bachelor of Science in Computer Science",
                     startDate: "2023",
-                    endDate: "2025",
+                    endDate: "2026",
                   },
                   {
                     "@type": "EducationalOrganization",
@@ -396,11 +387,6 @@ export default function RootLayout({
                     startDate: "2019",
                     endDate: "2023",
                   },
-                ],
-                award: [
-                  "MSc Financial Engineering Graduate",
-                  "Computer Science Graduate",
-                  "6+ Years Software Development Experience",
                 ],
                 hasCredential: [
                   {
@@ -423,6 +409,13 @@ export default function RootLayout({
                   },
                 ],
                 workExample: [
+                  {
+                    "@type": "CreativeWork",
+                    name: "FigureFlow",
+                    description:
+                      "AI-native finance platform for reconciliation, reporting, and decision-ready insight",
+                    url: "https://figureflow.app/",
+                  },
                   {
                     "@type": "CreativeWork",
                     name: "EasyShare Global",
@@ -471,14 +464,9 @@ export default function RootLayout({
                   "@id": "https://peaseadeniji.com/#person",
                 },
                 inLanguage: "en-US",
-                copyrightYear: "2024",
+                copyrightYear: "2026",
                 copyrightHolder: {
                   "@id": "https://peaseadeniji.com/#person",
-                },
-                potentialAction: {
-                  "@type": "SearchAction",
-                  target: "https://peaseadeniji.com/?s={search_term_string}",
-                  "query-input": "required name=search_term_string",
                 },
               },
               {

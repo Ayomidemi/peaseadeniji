@@ -3,10 +3,13 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title:
-    "Research - Data Science & Quantitative Finance Research | Coming Soon",
+  title: "Research",
   description:
-    "Peace (Pease) Adeniji's research hub focusing on quantitative finance, machine learning, financial engineering, and data science. Currently collecting and analyzing data for upcoming research publications and insights.",
+    "Research notes are not published yet.",
+  robots: {
+    index: false,
+    follow: true,
+  },
   keywords: [
     "Peace Adeniji",
     "Pease Adeniji",

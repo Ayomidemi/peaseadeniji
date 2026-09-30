@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 // });
 
 export const metadata: Metadata = {
-  title: "About Me - Software Engineer with 6+ Years Experience",
+  title: "About",
   description:
     "Learn about Peace (Pease) Adeniji, a Software Engineer with 6+ years of experience. MSc in Financial Engineering from WorldQuant University, BSc in Computer Science. Specialized in React, React Native, Node.js, and leading remote engineering teams. Available for new opportunities worldwide.",
   keywords: [
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     "International Development Team",
   ],
   openGraph: {
-    title: "About Peace (Pease) Adeniji - Software Engineer",
+    title: "About · Peace Adeniji",
     description:
       "Discover Peace (Pease) Adeniji's journey as a Software Engineer. 6+ years building scalable applications, leading remote teams, and delivering exceptional results. MSc Financial Engineering, BSc Computer Science.",
     url: "https://peaseadeniji.com/about",
   },
   twitter: {
-    title: "About Peace (Pease) Adeniji - Software Engineer",
+    title: "About · Peace Adeniji",
     description:
       "6+ years of software engineering excellence. Specialized in React, React Native, Node.js. Leading remote teams and building scalable applications worldwide.",
   },

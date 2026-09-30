@@ -4,7 +4,7 @@ import QuantShowcase from "@/components/quant/QuantShowcase";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Quant Work - Stochastic Modeling & Derivatives Pricing",
+  title: "Quant",
   description:
     "Explore Peace (Pease) Adeniji's quantitative finance notebooks on stochastic modeling, Heston calibration, regime-based allocation, binomial trees, and derivatives pricing.",
   keywords: [
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "Quant Work",
   ],
   openGraph: {
-    title: "Quant Work - Peace (Pease) Adeniji",
+    title: "Quant · Peace Adeniji",
     description:
       "Quantitative finance notebooks on stochastic modeling and derivatives pricing.",
     url: "https://peaseadeniji.com/quant",
   },
   twitter: {
-    title: "Quant Work - Peace (Pease) Adeniji",
+    title: "Quant · Peace Adeniji",
     description:
       "Stochastic modeling and derivatives pricing notebooks by Peace (Pease) Adeniji.",
   },

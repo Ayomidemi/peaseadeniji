@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ContactPage from "@/components/contact/ContactPage";
 
 export const metadata: Metadata = {
-  title: "Contact Me - Hire Software Engineer | Available for Remote Work",
+  title: "Contact",
   description:
     "Get in touch with Peace (Pease) Adeniji, Software Engineer available for remote opportunities worldwide. Open to full-time, contract, and consulting roles. Expert in React, React Native, Node.js, and modern web technologies. Based in Lagos, Nigeria with global availability.",
   keywords: [
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     "Mobile App Development Services",
   ],
   openGraph: {
-    title: "Contact Peace (Pease) Adeniji - Software Engineer for Hire",
+    title: "Contact · Peace Adeniji",
     description:
       "Ready to hire a Software Engineer? Peace (Pease) Adeniji is available for remote opportunities worldwide. 6+ years experience in React, React Native, Node.js. Contact for collaboration.",
     url: "https://peaseadeniji.com/contact",
   },
   twitter: {
-    title: "Hire Peace (Pease) Adeniji - Software Engineer",
+    title: "Contact · Peace Adeniji",
     description:
       "Software Engineer available for remote work. 6+ years experience, expert in React/Node.js. Open to full-time, contract & consulting opportunities.",
   },

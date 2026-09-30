@@ -21,7 +21,7 @@ export function generateMetadata({ params }: QuantProjectPageProps): Metadata {
   }
 
   return {
-    title: `${project.title} | Quant Work`,
+    title: project.title,
     description: project.description,
     alternates: {
       canonical: `/quant/${project.slug}`,

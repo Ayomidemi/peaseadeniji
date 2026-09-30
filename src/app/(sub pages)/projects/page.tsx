@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ProjectsPage from "@/components/projects/ProjectsPage";
 
 export const metadata: Metadata = {
-  title: "Projects - React, Next.js, Fintech, AI & Web3 Development",
+  title: "Projects",
   description:
     "Explore Peace (Pease) Adeniji's diverse software engineering portfolio: Fintech banking apps, e-commerce platforms, social impact projects, Web3 NFT marketplaces, AI-powered applications, and modern web development. Built with React, Next.js, Python, C++, and cutting-edge technologies.",
   keywords: [
@@ -38,15 +38,13 @@ export const metadata: Metadata = {
     "Node.js Applications",
   ],
   openGraph: {
-    title:
-      "Projects Portfolio - Peace (Pease) Adeniji Software Engineer & Quantitative Developer",
+    title: "Projects · Peace Adeniji",
     description:
       "Discover innovative software projects by Peace (Pease) Adeniji: fintech banking apps, AI-powered applications, Web3 platforms, social impact technology, and modern web development solutions.",
     url: "https://peaseadeniji.com/projects",
   },
   twitter: {
-    title:
-      "Software Engineering & Quantitative Development Projects by Peace (Pease) Adeniji",
+    title: "Projects · Peace Adeniji",
     description:
       "Innovative projects showcasing React, Next.js, AI, Web3, fintech expertise. Banking apps, NFT marketplaces, social impact platforms, and quantitative finance solutions.",
   },

@@ -4,7 +4,7 @@ import BlogShowcase from "@/components/blog/BlogShowcase";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Blogs - Thoughts on Life, Identity & Growth | Peace (Pease) Adeniji",
+  title: "Blogs",
   description:
     "Explore Peace (Pease) Adeniji's personal blogs featuring thoughtful reflections on womanhood, identity, love, literature, and the human experience. Read engaging stories and insights on Medium.",
   keywords: [
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "Medium Articles",
   ],
   openGraph: {
-    title: "Blogs - Personal Reflections & Insights by Peace (Pease) Adeniji",
+    title: "Blogs · Peace Adeniji",
     description:
       "Discover thoughtful essays and personal reflections by Peace (Pease) Adeniji. From life experiences to book reviews, explore engaging stories and insights published on Medium.",
     url: "https://peaseadeniji.com/blogs",
   },
   twitter: {
-    title: "Blogs - Peace (Pease) Adeniji | Personal Reflections & Insights",
+    title: "Blogs · Peace Adeniji",
     description:
       "Read personal essays, life reflections, and book reviews by Peace (Pease) Adeniji. Thoughtful writing on life, growth, and society published on Medium.",
   },
