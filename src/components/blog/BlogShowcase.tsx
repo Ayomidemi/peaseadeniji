@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     title: "All of the People That I Am",
     excerpt:
-      "I am a mosaic of everyone I have ever loved, even if only for a heartbeat. From noodles made like a roommate once did, to songs, books, and rainy Saturday mornings borrowed from almost-lovers and friends, I exist in habits I picked up from people who no longer stay.",
+      "I make noodles the way I saw a roommate make them in university. Brymo became an artist I love because the boy I liked loved him first. I love burgers because a talking stage in 2020 convinced me to try them...",
     readTime: "2 min",
     category: "Personal Essays",
     date: "2025",
@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     id: 2,
     title: "I Hate Being a Woman, But Let Me Tell You Why",
     excerpt:
-      "I said I hated being a woman and everyone asked if I was on my period. This is why that question misses the point entirely. From security guards who hang up on you to the reality that your voice goes shrill when you try to assert authority.",
+      "A few days ago, I posted on my story about how I hated being a woman, and I got a couple of replies. Some of them went: “Are you on your period?” “You shouldn’t say that because women are wonderful.” “Did something happen?”...",
     readTime: "8 min",
     category: "Personal Essays",
     date: "2025",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     id: 3,
     title: "The Love Letter I Never Got to Pen",
     excerpt:
-      "For all the words that stayed trapped in my throat, all the feelings that lived in the space between almost and never. This is for the love that existed in possibility, and the letters that live forever unwritten.",
+      "A few days ago, I went on a solo date to a stage play even though I didn’t buy the ticket intending to go alone. I’d asked a man (whom I’d completely lost all respect for at the time) to come with me, and he agreed...",
     readTime: "6 min",
     category: "Personal Reflections",
     date: "2025",
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "What If the Loudest Asset in the Room Is the Only One Telling the Truth",
     excerpt:
-      "Bitcoin doesn't whisper, it screams. While stocks move with careful, suited steps, crypto trades like it's chasing demons. What if the asset we dismiss as unhinged is actually the most honest voice in the market?",
+      "And we’ve been ignoring it because it doesn’t wear a suit. The stock market is calm. Too calm sometimes. It moves with careful steps, checks the news, adjusts its tie...",
     readTime: "3 min",
     category: "Financial Analysis",
     date: "2025",
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     id: 5,
     title: "Blessings by Chukwuebuka Ibeh: A Book That Met Me Where I Was",
     excerpt:
-      "When you're drowning in your own thoughts, sometimes the right book throws you a lifeline. This is about finding yourself reflected in someone else's words and realizing you're not as alone as you thought.",
+      "From the first page, Blessings resonated with me on such a personal level that I feel an overwhelming sense of gratitude to Chukwuebuka Ibeh for crafting this beautiful story. It is a beautiful and deeply relatable piece that took me on a long emotional journey...",
     readTime: "7 min",
     category: "Book Reviews",
     date: "2025",

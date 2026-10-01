@@ -35,6 +35,10 @@ const AboutDetails = () => {
               <p className="text-foreground">BSc, Computer Science</p>
               <p className="mt-1 text-muted">Miva Open University · 2026</p>
             </div>
+            <div>
+              <p className="text-foreground">BSc, Marine Biology</p>
+              <p className="mt-1 text-muted">University of Lagos · 2024</p>
+            </div>
           </div>
         </div>
 

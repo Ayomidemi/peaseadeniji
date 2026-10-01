@@ -385,7 +385,7 @@ export default function RootLayout({
                     name: "University of Lagos",
                     description: "Bachelor of Science in Marine Biology",
                     startDate: "2019",
-                    endDate: "2023",
+                    endDate: "2024",
                   },
                 ],
                 hasCredential: [
