@@ -15,6 +15,17 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 6,
+    title: "In the Twenty-Ninth Second",
+    excerpt:
+      "They say you get up to thirty seconds after death to reflect on life. Isn’t that interesting? Knowing that there is life, even after death. My last thirty seconds, what will I think about? The kiss I shared with James at the cinema last year or the way he looked at me afterwards?...",
+    readTime: "4 min",
+    category: "Personal Reflections",
+    date: "2026",
+    url: "https://medium.com/@peaseadeniji/in-the-twenty-ninth-second-158525ce8be8",
+    featured: false,
+  },
+  {
     id: 1,
     title: "All of the People That I Am",
     excerpt:
