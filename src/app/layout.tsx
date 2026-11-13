@@ -3,7 +3,6 @@ import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/next";
-import FireFliesBackground from "@/components/FireFliesBackground";
 import Sound from "@/components/Sound";
 
 const sans = Inter({
