@@ -500,7 +500,6 @@ export default function RootLayout({
       >
         {children}
 
-        {/* <FireFliesBackground /> */}
         {/* <Sound />
         <div id="my-modal" /> */}
       </body>
