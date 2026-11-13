@@ -498,9 +498,6 @@ export default function RootLayout({
         )}
       >
         {children}
-
-        {/* <Sound />
-        <div id="my-modal" /> */}
       </body>
     </html>
   );
